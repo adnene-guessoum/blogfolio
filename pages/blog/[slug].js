@@ -1,13 +1,19 @@
+import React from 'react';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import { MyLink } from '../../components';
 
-const components = { SyntaxHighlighter, MyLink };
+const components = {
+  MyLink,
+  SyntaxHighlighter: props => <SyntaxHighlighter style={dracula} {...props} />
+};
 
 const PostPage = ({ mdxSource, frontMatter: { title, date } }) => {
   return (

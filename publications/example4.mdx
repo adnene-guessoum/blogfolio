@@ -7,14 +7,17 @@ tags: ['example', 'test']
 ---
 
 # TITRE
+
 <div>
-  C'est un article test des fonctionnalités MDX. <strong>Cool, non?</strong>. <br/>
+  C'est un article test des fonctionnalités MDX. <strong>Cool, non?</strong>.{' '}
+  <br />
   Comment rédiger un article et ajouter les métadata appropriées ?
 </div>
 
-<br/>
+<br />
 
 ### SOUS-TITRE
+
 avec markdown classique `###`.
 
 <SyntaxHighlighter language="javascript">
@@ -32,4 +35,7 @@ avec markdown classique `###`.
   }
 ```
 
-<div>Et même des composants dans notre blog post : {<MyLink href={"/"}>Retour à Accueil</MyLink>}</div>
+<div>
+  Et même des composants dans notre blog post :{' '}
+  {<MyLink href={'/'}>Retour à Accueil</MyLink>}
+</div>

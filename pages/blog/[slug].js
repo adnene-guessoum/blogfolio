@@ -5,9 +5,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-import { Navbar } from '../../components/Navbar';
+import { MyLink } from '../../components';
 
-const components = { Navbar, SyntaxHighlighter };
+const components = { SyntaxHighlighter, MyLink };
 
 const PostPage = ({ mdxSource, frontMatter: { title, date } }) => {
   return (
@@ -21,7 +21,7 @@ const PostPage = ({ mdxSource, frontMatter: { title, date } }) => {
 };
 
 const getStaticPaths = async () => {
-  const files = fs.readdirSync('posts');
+  const files = fs.readdirSync('publications');
   const paths = files.map(filename => ({
     params: {
       slug: filename.replace('.mdx', '')
@@ -36,7 +36,7 @@ const getStaticPaths = async () => {
 
 const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join('posts', slug + '.mdx'),
+    path.join('publications', slug + '.mdx'),
     'utf-8'
   );
 

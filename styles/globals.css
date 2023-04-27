@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: #131516;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #cdc8c2;
+}
+
+.subtitle {
+  color: #d6d3cd;
+}

@@ -12,7 +12,7 @@ const MainLayout = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <main className="flex justify-center main pt-10 m-4 border bg-grey-400">
+      <main className="flex justify-center main pt-10 m-4 border border-slate-700">
         {children}
       </main>
     </div>

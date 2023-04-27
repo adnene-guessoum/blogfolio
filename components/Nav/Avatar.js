@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 const Avatar = () => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 align items-center">
       <Image
-        src="/public/images/index/avatar.png"
+        src="/images/index/avatar.png"
         alt="avatar"
-        className="avatar"
+        className="avatar rounded-full"
         width="50"
         height="50"
       />

@@ -5,11 +5,11 @@ import MyLink from '../components/general/Link';
 const Contact = () => {
   return (
     <div className="text-justify text-center">
-      <h2 className="subtitle text-4xl font-serif font-bold text-gray-900 mb-4 shadow-sm ">
+      <h2 className="subtitle text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
         Où me trouver ?
       </h2>
 
-      <div className="contact-container border m-6 p-10 flex justify-between">
+      <div className="contact-container border border-slate-500 m-6 p-10 flex flex-wrap justify-between">
         <button className="contact-item flex gap-3 items-center">
           <BsGithub />
           <MyLink href="https://github.com/adnene-guessoum">Github</MyLink>

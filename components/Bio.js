@@ -1,10 +1,10 @@
 const Bio = () => {
   return (
     <div className="text-justify text-center">
-      <h2 className="subtitle text-4xl font-serif font-bold mb-4 shadow-sm ">
-        Bienvenue chez moi.
+      <h2 className="subtitle text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
+        Bienvenue
       </h2>
-      <div className="flex flex-col gap-5 ml-4">
+      <div className="flex flex-col gap-5 m-4 p-2">
         <p>
           J&apos;écris toutes sortes de choses ici. Idées, Découvertes, Opinions
           et Projets...

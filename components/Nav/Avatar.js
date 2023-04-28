@@ -10,7 +10,7 @@ const Avatar = () => {
         width="50"
         height="50"
       />
-      <h1 className="text-center">Blogfolio - Adnene Guessoum</h1>
+      <h1 className="text-center ml-4 text-2xl">Blogfolio - Adnene Guessoum</h1>
     </div>
   );
 };

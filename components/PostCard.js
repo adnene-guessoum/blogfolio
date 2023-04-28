@@ -4,8 +4,7 @@ import MyLink from './general/Link';
 const PostCard = ({ post, index }) => {
   return (
     <div
-      className="flex flex-col flex-wrap md:flex-row gap-5 md:items-center mb-5 border border-slate-700 shadow-lg overflow-hidden"
-      style={{ minWidth: '540px' }}
+      className="flex flex-row gap-5 items-center border border-slate-700 shadow-lg p-1"
       key={index}
     >
       <div className="image-container">
@@ -24,7 +23,7 @@ const PostCard = ({ post, index }) => {
         </MyLink>
         <p className="card-description">{post.frontMatter.description}</p>
         <p className="date-publication">{post.frontMatter.date}</p>
-        <p className="card-tags">Catégorie: {post.frontMatter.tags[0]}</p>
+        <p className="card-tags">Catégorie: {post.frontMatter.category}</p>
       </div>
     </div>
   );

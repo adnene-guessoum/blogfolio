@@ -32,15 +32,37 @@ export async function getStaticProps() {
 const Blog = ({ posts }) => {
   return (
     <>
-      <h2>Tech</h2>
-      <div className="flex flex-wrap mt-5 justify-around">
-        {posts.map((post, index) => (
-          <PostCard post={post} index={index} key={index} />
-        ))}
+      <h2 className="subtitle m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        Tech
+      </h2>
+      <div className="flex flex-wrap m-5 flex-col sm:flex-row sm:justify-around justify-start gap-2 ">
+        {posts.map((post, index) => {
+          if (post.frontMatter.category === 'tech') {
+            return <PostCard post={post} index={index} key={index} />;
+          }
+        })}
       </div>
-      <h2>General</h2>
-      <h2>Divertissement</h2>
-      <h2>Coups de coeur</h2>
+      <h2 className="subtitle m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        General
+      </h2>
+      <div className="flex flex-wrap mt-5 justify-around sm:justify-start sm:gap-2">
+        {posts.map((post, index) => {
+          if (post.frontMatter.category === 'general') {
+            return <PostCard post={post} index={index} key={index} />;
+          }
+        })}
+      </div>
+
+      <h2 className="subtitle m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        Divertissement
+      </h2>
+      <div className="flex flex-wrap mt-5 mb-5 justify-around sm:justify-start">
+        {posts.map((post, index) => {
+          if (post.frontMatter.category === 'divertissement') {
+            return <PostCard post={post} index={index} key={index} />;
+          }
+        })}
+      </div>
     </>
   );
 };

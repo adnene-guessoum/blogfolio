@@ -6,20 +6,28 @@ const Bio = () => {
       </h2>
       <div className="flex flex-col gap-5 ml-4">
         <p>
-          Ce petit espace est l&apos;endroit où je collecte mes idées, mes
-          découvertes, mes opinions et mes projets. J&apos;écris toutes sortes
-          de choses ici. J&apos;aimerais garder ce site assez simple et
-          minimaliste.
+          J&apos;écris toutes sortes de choses ici. Idées, Découvertes, Opinions
+          et Projets...
         </p>
         <p>
-          En même temps, Je compte tout de même y partager mes projets et mes
-          réalisations professionnelles et personnelles.
+          L&apos;objectif est de faire simple, minimaliste. Je compte aussi
+          partager mes projets et mes réalisations professionnelles et
+          personnelles. Sait-on jamais qui pourrait passer par là qui voudrait
+          travailler ensemble.
         </p>
         <p>
-          Je suis un développeur web full-stack intéressé par les technologies
-          d&apos;IA, les questions de sociétés et les lectures en tout genres.
-          ça risque bien d&apos;être heclectique mais j&apos;espère que vous y
-          trouverez votre compte.
+          Je suis développeur dans la vrai vie (Python, Django, React, Next.js,
+          Tailwind, Docker, AWS, etc.). Ducoup, ce sera trés tech comme
+          blogfolio.
+        </p>
+        <p>
+          Mais il y aura une grande part de tout et de rien. D&apos;opinions
+          tranchées sur des lectures, des questions de sociétés et des
+          divertissements en tout genre.
+        </p>
+        <p>
+          Je sens qu&apos;on va bien s&apos;amuser. Ca risque d&apos;être
+          héclectique mais j&apos;espère que vous y trouverez votre compte.
         </p>
       </div>
     </div>

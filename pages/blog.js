@@ -31,11 +31,17 @@ export async function getStaticProps() {
 
 const Blog = ({ posts }) => {
   return (
-    <div className="flex flex-wrap mt-5 justify-around">
-      {posts.map((post, index) => (
-        <PostCard post={post} index={index} key={index} />
-      ))}
-    </div>
+    <>
+      <h2>Tech</h2>
+      <div className="flex flex-wrap mt-5 justify-around">
+        {posts.map((post, index) => (
+          <PostCard post={post} index={index} key={index} />
+        ))}
+      </div>
+      <h2>General</h2>
+      <h2>Divertissement</h2>
+      <h2>Coups de coeur</h2>
+    </>
   );
 };
 

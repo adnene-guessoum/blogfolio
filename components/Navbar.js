@@ -1,22 +1,18 @@
-import Link from 'next/link';
+import MyLink from '../components/general/Link';
 import Avatar from '../components/Nav/Avatar';
 
 const Navbar = () => {
   return (
-    <nav className=" flex justify-between nav p-4">
+    <nav className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center">
       <Avatar />
 
-      <Link href="/" passHref>
-        <h2 className="nav-link">Accueil</h2>
-      </Link>
+      <div className="flex items-center gap-8 mt-4 sm:mt-0">
+        <MyLink href="/">Accueil</MyLink>
 
-      <Link href="/blog" passHref>
-        <h2 className="nav-link">Blog</h2>
-      </Link>
+        <MyLink href="/blog">Blog</MyLink>
 
-      <Link href="/portfolio" passHref>
-        <h2 className="nav-link">Portfolio</h2>
-      </Link>
+        <MyLink href="/portfolio">Portfolio</MyLink>
+      </div>
     </nav>
   );
 };

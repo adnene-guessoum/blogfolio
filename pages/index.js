@@ -1,13 +1,13 @@
 import Bio from '../components/Bio';
+import Contact from '../components/Contact';
+import Coeur from '../components/Coeur';
 
 const Accueil = () => {
   return (
-    <div className="flex flex-col justify-center item-center">
-      <div>
-        <h2>Bienvenue</h2>
-      </div>
-
+    <div className="flex flex-col gap-5 justify-center item-center">
       <Bio />
+      <Contact />
+      <Coeur />
     </div>
   );
 };

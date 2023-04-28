@@ -1,5 +1,6 @@
 #environment
 .env
+unused.txt
 
 #temporary
 temp*.*

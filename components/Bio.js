@@ -11,14 +11,12 @@ const Bio = () => {
         </p>
         <p>
           L&apos;objectif est de faire simple, minimaliste. Je compte aussi
-          partager mes projets et mes réalisations professionnelles et
-          personnelles. Sait-on jamais qui pourrait passer par là qui voudrait
-          travailler ensemble.
+          partager mes réalisations professionnelles et personnelles. Sait-on
+          jamais qui pourrait passer par là qui voudrait travailler ensemble.
         </p>
         <p>
-          Je suis développeur dans la vrai vie (Python, Django, React, Next.js,
-          Tailwind, Docker, AWS, etc.). Ducoup, ce sera trés tech comme
-          blogfolio.
+          Je suis développeur (Python, Django, React, Next.js, Tailwind, Docker,
+          AWS, etc.). Ducoup, ce sera trés tech comme blogfolio.
         </p>
         <p>
           Mais il y aura une grande part de tout et de rien. D&apos;opinions

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Highlights = () => {
   return (
-    <div className="flex w-full h-96 items-center justify-center border border-black dark:border-white">
+    <div className="flex w-full h-96 lg:h-[38em] items-center justify-center border border-black dark:border-white">
       <div className="flex w-full h-full border">
         <div className="group slide bg-thumbDash flex flex-col justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-300 md:w-1/2 w-full p-2 rounded-xl">

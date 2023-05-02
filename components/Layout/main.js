@@ -15,6 +15,10 @@ const MainLayout = ({ children, router }) => {
       <main className="flex justify-center main pt-10 m-4 border border-slate-600">
         {children}
       </main>
+
+      <footer className="flex justify-center footer p-4 border border-slate-600">
+        copyleft 2023 - Adnene Guessoum
+      </footer>
     </div>
   );
 };

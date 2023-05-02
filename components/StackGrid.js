@@ -65,13 +65,17 @@ import Image from 'next/image';
 const TechStackGrid = () => {
   const techLogos = (img, text) => {
     return (
-      <div className="flex flex-col justify-center items-center gap-2">
+      <div
+        className="flex flex-col justify-center items-center gap-2"
+        key={text}
+      >
         <Image
           src={img}
           alt="tech logo"
           className="w-20 h-20 object-cover bg-white rounded-full bg-opacity-50 border-2 border-white shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 "
           width={100}
           height={100}
+          key={text}
         />
 
         <p className="text-center text-sm font-semibold">{text}</p>

@@ -1,6 +1,7 @@
 #environment
 .env
 unused.txt
+garbaga/
 
 #temporary
 temp*.*

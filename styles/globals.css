@@ -14,3 +14,17 @@ body {
 .subtitle {
   color: #d6d3cd;
 }
+
+/* Slider styles */
+
+.slide {
+  @apply relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
+}
+
+.slide-hidden {
+  @apply relative hidden md:flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
+}
+
+.slide:hover {
+  @apply flex-slide;
+}

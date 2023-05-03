@@ -21,9 +21,12 @@ const PostCard = ({ post, index }) => {
         <MyLink href={`/blog/${post.slug}`} key={index}>
           <h5 className="card-title text-xl">{post.frontMatter.title}</h5>
         </MyLink>
-        <p className="card-description pl-1">{post.frontMatter.description}</p>
-        <p className="date-publication">{post.frontMatter.date}</p>
-        <p className="card-tags">Catégorie: {post.frontMatter.category}</p>
+        <p className="card-description pl-2 mt-2">
+          {post.frontMatter.description}
+        </p>
+        <p className="date-publication text-gray-400">
+          {post.frontMatter.date}
+        </p>
       </div>
     </div>
   );

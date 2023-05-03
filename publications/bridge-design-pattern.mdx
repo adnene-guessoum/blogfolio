@@ -10,13 +10,27 @@ tags: ['design-patterns', 'python', 'code']
 # PATRON DE STRUCTURE : PONT
 
 <br />
+<Image
+  src={`/images/articles/designPatterns/structure/class-diagram-bridge-method.png`}
+/>
+<br />
 
 <div>
-L'objectif pour ce patron de conception est de découpler l'implémentation abstraite d'une classe de son implémentation concrête. Il s'agit de séparer la logique de l'implémentation de la logique de l'abstraction.
-de la logique en jeu de ses implémentation abstraites associées, créant ainsi
-Ce patron de conception permet de créer un "pont" entre les concrétisation des différentes implémentations en cachant leurs différences. Il ne doit pas être confondu avec le patron de conception <em>Adapter</em> qui permet de faire communiquer deux interfaces incompatibles entre elles. (au prochain épisode !).
-<br />
-Mettons ainsi qu'une entreprise cherche à envoyer un message à un client. l'idée est ainsi de communiquer une information. Il n'en reste pas moins qu'il existe de nombreuses manières d'"envoyer un message" concrêtement. Le Pont permet ainsi de structurer le code de manière à cacher l'implémentation concrête de l'abstraction tout en tenant compte de ces spécificités.
+  L'objectif pour ce patron de conception est de découpler la logique abstraite
+  et les implémentations concrètes de notre code. C'est à dire séparer la
+  logique de l'implémentation de la logique de l'abstraction. Ce patron de
+  conception permet donc de créer un "pont" entre les concrétisations des
+  différentes implémentations en cachant leurs différences. Il ne doit pas être
+  confondu avec le patron de conception <em>Adapteur</em> qui permet de faire
+  communiquer deux interfaces incompatibles entre elles. (au prochain épisode
+  !).
+  <br />
+  Mettons par exemple qu'une entreprise cherche à envoyer un message à un
+  client. l'idée est ainsi de communiquer une information. Il n'en reste pas
+  moins qu'il existe de nombreuses manières d'"envoyer un message" concrètement.
+  Le Pont permet ainsi de structurer le code de manière à cacher
+  l'implémentation concrète de l'abstraction tout en tenant compte de ces
+  spécificités.
 </div>
 
 ### Codons un exemple :
@@ -26,18 +40,21 @@ Mettons ainsi qu'une entreprise cherche à envoyer un message à un client. l'id
 {`class SMS:
 	"""Implémentation spécifique de notre abstraction"""
 	def envoyerMessage(self, length, content, importance):
-		print(f'le SMS envoie des messages de longueur {length}, de contenue {content} et important : {importance}')
+		print(f'le SMS envoie des messages de longueur {length},' +
+		f' de contenue {content} et important : {importance}')
 
 class Email:
-	"""Implémentation spécifique de notre abstraction"""
-	def envoyerMessage(self, length, content, importance):
-		print(f'même principe pour avec autres types')
+"""Implémentation spécifique de notre abstraction"""
+def envoyerMessage(self, length, content, importance):
+print(f'même principe pour avec autres types')
 `}
+
 </SyntaxHighlighter>
 <br />
 
 <div>
-Nous avons bien deux moyens de contacter nos clients concrétement. Mais l'idée est la même. leur faire passer un message :
+  Nous avons bien deux moyens de contacter nos clients en pratique. Mais l'idée
+  est la même. Leur faire passer un message :
 </div>
 
 <br />
@@ -45,44 +62,49 @@ Nous avons bien deux moyens de contacter nos clients concrétement. Mais l'idée
 {`
 class Message:
 
-	def __init__(self, length, content, importance, implementation):
-		"""On initialise avec les paramètres de notre message"""
-		self._length = length
-		self._content = content
-		self._importance = importance
+    def __init__(self, length, content, importance, implementation):
+    	"""On initialise avec les paramètres de notre message"""
+    	self._length = length
+    	self._content = content
+    	self._importance = importance
 
-# On stocke l'implémentation spécifique à notre message (SMS ou Email)
-		self._implementation = implementation
+# On stocke l'implémentation spécifique à un message particulier ici (SMS ou Email)
 
-	def envoyer(self):
-		"""On envoie en utilisant l'implémentation spécifique"""
-		self._implementation.envoyerMessage(self._length, self._content, self._importance)
+    	self._implementation = implementation
 
-	def recordClientMessage(self):
-		"""Implémentation indépendante de notre abstraction (on le fait dans tous les cas)"""
-		print('On enregistre une confirmation d\'envoie dans notre base de données');
-	`}
-	</SyntaxHighlighter>
+    def envoyer(self):
+    	"""On envoie en utilisant l'implémentation spécifique (méthode de SMS vs de Email)"""
+    	self._implementation.envoyerMessage(self._length,
+    										self._content,
+    										self._importance)
+
+    def recordClientMessage(self):
+    	"""Implémentation indépendante de abstraction (dans tous les cas)"""
+    	print('On enregistre une confirmation',
+    		' pour envoie dans notre base de données');
+    `}
+    </SyntaxHighlighter>
+
 <br />
 
 <div>
-	Ainsi, on peut désormais instancier nos implémentations spécifiques :
+  Ainsi, on peut désormais "instancier" nos implémentations spécifiques :
 </div>
 
 <br />
-	<SyntaxHighlighter language="python">
-{`
+<SyntaxHighlighter language="python">
+  {`
 sms = SMS()
 email = Email()
 		`}
-	</SyntaxHighlighter>
+</SyntaxHighlighter>
 
 <br />
 puis créer nos messages avec celles-ci :
 <br />
 
 <SyntaxHighlighter language="python">
-{`
+  {`
 message1 = Message(10, 'Salut', 'faible', sms)
 message2 = Message(100, 'Salut', 'faible', email)
 		`}
@@ -97,24 +119,35 @@ pour les envoyer, pas besoin de s'inquiéter de leurs spécificités respectives
 message1.envoyer()
 message2.envoyer()
 
-# On enregistre nos messages dans notre base de données (on le fait dans tous les cas indépendamment de l'implémentation utilisée)
+# On enregistre nos messages dans notre base de données
+
+# (on le fait dans tous les cas indépendamment de l'implémentation utilisée)
+
 message1.recordClientMessage()
 message2.recordClientMessage()
-		`}
+`}
+
 </SyntaxHighlighter>
 
-		## <em>TADA !</em>
+    	## <em>TADA !</em>
 
-		On peut changer l'implémentation utilisée à la volée ou en ajouter de nouvelles
-		Le "pont" est dans notre cas l'implémentation de notre classe Message
-<br />
-		## A la prochaine pour un autre patron de conception.
-		Vous pouvez retrouver un autre exemple, certainement mieux expliquer, avec des illustrations sur :
-{<a href= 'https://www.geeksforgeeks.org/bridge-method-python-design-patterns/' target='_blank' className='underline underline-offset-2'>Geeks for Geeks</a>}
+    	On peut changer l'implémentation utilisée à la volée ou en ajouter de nouvelles
+    	Le "pont" est, dans notre cas, l'implémentation de notre classe Message.
+    	S'il y a des erreurs ici, n'hésitez pas à me le faire savoir.
 
 <br />
+## A la prochaine pour un autre patron de conception. Vous pouvez retrouver un autre
+exemple, certainement mieux expliquer, avec des illustrations sur :{
+  <a
+    href="https://www.geeksforgeeks.org/bridge-method-python-design-patterns/"
+    target="_blank"
+    className="underline underline-offset-2"
+  >
+    Geeks for Geeks
+  </a>
+}
+
+<br />
 <br />
 
-<div>
-  {<MyLink href={'/blog'}>Retour aux articles</MyLink>}
-</div>
+<div>{<MyLink href={'/blog'}>Retour aux articles</MyLink>}</div>

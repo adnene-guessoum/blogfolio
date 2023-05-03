@@ -9,10 +9,26 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import { MyLink } from '../../components';
+import Image from 'next/image';
 
 const components = {
   MyLink,
-  SyntaxHighlighter: props => <SyntaxHighlighter style={dracula} {...props} />
+  SyntaxHighlighter: props => (
+    <div className="flex justify-center max-w-2/3">
+      <SyntaxHighlighter style={dracula} {...props} />
+    </div>
+  ),
+  Image: props => (
+    <div className="flex justify-center">
+      <Image
+        {...props}
+        width={700}
+        height={500}
+        className="center"
+        alt="illustration"
+      />
+    </div>
+  )
 };
 
 const PostPage = ({ mdxSource, frontMatter: { title, date } }) => {

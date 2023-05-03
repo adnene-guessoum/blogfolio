@@ -38,6 +38,7 @@ const Blog = ({ posts }) => {
       <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
         {posts.map((post, index) => {
           if (post.frontMatter.category === 'tech') {
+            console.log(post);
             return <PostCard post={post} index={index} key={index} />;
           }
         })}

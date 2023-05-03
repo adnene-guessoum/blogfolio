@@ -7,12 +7,12 @@ const Portfolio = () => {
     <>
       <div className="flex flex-col items-center justify-center border w-full">
         <h2 className="subtitle text-4xl text-center font-serif font-bold mb-4 shadow-sm mt-4">
-          A la une : {/* <ImportantProjects /> */}
+          A la une :
         </h2>
       </div>
       <Highlights />
 
-      <h2 className="subtitle text-4xl text-center font-serif font-bold mb-4 shadow-sm mt-4">
+      <h2 className="subtitle text-4xl text-center font-serif font-bold mb-4 shadow-sm mt-12">
         Github :{' '}
       </h2>
       <Projects />

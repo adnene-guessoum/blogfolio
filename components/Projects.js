@@ -15,13 +15,10 @@ const Projects = () => {
 
   const toIncludeProjects = [
     'blogfolio',
-    'Owling-dev',
     'Projet_scoring_credit',
     'Projet_aws_pyspark_fruits',
-    'Projet_NLP_image_class',
-    'blog',
-    'Assercar-clone',
-    'Github_cli'
+    'Philosophie',
+    'Projet_NLP_image_class'
   ];
 
   const toIncludeExercises = [

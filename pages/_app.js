@@ -1,13 +1,17 @@
-import Head from 'next/head';
 import Layout from '../components/Layout/main';
 import '../styles/globals.css';
 
-function Blogfolio({ Component, pageProps, router }) {
+function Blogfolio({ Component, pageProps, customMeta, router }) {
+  if (router.pathname.includes('/blog/')) {
+    return (
+      <main>
+        <Component {...pageProps} />
+      </main>
+    );
+  }
+
   return (
-    <Layout router={router}>
-      <Head>
-        <title>Adnene Guessoum - Blogfolio</title>
-      </Head>
+    <Layout customMeta={customMeta} router={router}>
       <div className="container">
         <main>
           <Component {...pageProps} />

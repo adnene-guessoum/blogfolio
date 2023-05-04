@@ -1,22 +1,20 @@
-import Head from 'next/head';
 import Navbar from '../Navbar';
+import CustomHead from './CustomHead';
+import { useRouter } from 'next/router';
 
-const MainLayout = ({ children, router }) => {
+export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
+
+const MainLayout = ({ children, customMeta }) => {
+  const router = useRouter();
+
   return (
-    <div className="layout">
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Blogfolio - Adnene Guessoum </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <div className="layout min-h-screen">
+      <CustomHead customMeta={customMeta} router={router} />;
       <Navbar path={router.asPath} />
-
       <main className="flex justify-center main pt-10 m-4 border border-slate-600">
         {children}
       </main>
-
-      <footer className="flex justify-center footer p-4 border border-slate-600">
+      <footer className="sticky top-[100vh] flex justify-center footer p-4 border border-slate-600">
         copyleft 2023 - Adnene Guessoum
       </footer>
     </div>

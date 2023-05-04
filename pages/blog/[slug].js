@@ -1,3 +1,4 @@
+import Layout, { WEBSITE_HOST_URL } from '../../components/Layout/main.js';
 import React from 'react';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
@@ -31,14 +32,28 @@ const components = {
   )
 };
 
-const PostPage = ({ mdxSource, frontMatter: { title, date } }) => {
+const PostPage = ({ mdxSource, frontMatter }) => {
+  const customMeta = {
+    title: frontMatter.title,
+    description: frontMatter.description,
+    image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
+    date: frontMatter.date,
+    category: frontMatter.category,
+    type: 'article',
+    ...frontMatter
+  };
+
   return (
-    <div className="mt-3">
-      <h1 className="text-3xl font-bold">{title}</h1>
-      <p className="text-sm text-gray-500">{date}</p>
-      <hr className="my-3" />
-      <MDXRemote {...mdxSource} components={components} />
-    </div>
+    <Layout customMeta={customMeta}>
+      <div className="container">
+        <article className="mt-3">
+          <h1 className="text-3xl font-bold">{frontMatter.title}</h1>
+          <p className="text-sm text-gray-500">{frontMatter.date}</p>
+          <hr className="my-3" />
+          <MDXRemote {...mdxSource} components={components} />
+        </article>
+      </div>
+    </Layout>
   );
 };
 

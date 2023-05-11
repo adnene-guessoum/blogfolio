@@ -16,11 +16,14 @@ const Navbar = () => {
   return (
     <>
       {banner}
-      <nav className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center">
+      <nav
+        id="navRef"
+        className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center"
+      >
         <Avatar />
 
         <div className="flex items-center gap-8 mt-4 sm:mt-0">
-          <Link href="/" passHref legacyBehavior>
+          <Link href="/#navRef" passHref legacyBehavior>
             <a className="nav-link hover:text-teal-500 underline underline-offset-4">
               Accueil
             </a>

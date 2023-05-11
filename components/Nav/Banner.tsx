@@ -71,7 +71,6 @@ const Banner = (): JSX.Element => {
           <SlArrowDownCircle
             onClick={handleClick}
             className="text-5xl animate-bounce mt-6"
-            style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           />
         </div>
       </div>

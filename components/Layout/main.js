@@ -9,7 +9,7 @@ const MainLayout = ({ children, customMeta }) => {
 
   return (
     <div className="layout min-h-screen">
-      <CustomHead customMeta={customMeta} router={router} />;
+      <CustomHead customMeta={customMeta} router={router} />
       <Navbar path={router.asPath} />
       <main className="flex justify-center main pt-10 m-4 border border-slate-600">
         {children}

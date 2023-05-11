@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        banner: "url('/banner.png')",
         thumbAWS: "url('/images/thumbnails/thumbnail_aws.png')",
         thumbDash: "url('/images/thumbnails/thumbnail_dash.png')",
         thumbGh: "url('/images/thumbnails/thumbnail_gh_cli.png')",

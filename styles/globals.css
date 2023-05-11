@@ -2,29 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: #131516;
-}
+@layer base {
+  .flex-slide {
+    @apply flex-auto;
+  }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #cdc8c2;
-}
+  html {
+    background-color: #131516;
+  }
 
-.subtitle {
-  color: #d6d3cd;
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #cdc8c2;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  a {
+    color: #cdc8c2;
+  }
+
+  a:hover {
+    @apply text-teal-500 underline underline-offset-2;
+  }
 }
 
 /* Slider styles */
 
-.slide {
-  @apply relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
-}
+@layer components {
+  .slide {
+    @apply relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
+  }
 
-.slide-hidden {
-  @apply relative hidden md:flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
-}
+  .slide-hidden {
+    @apply relative hidden md:flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
+  }
 
-.slide:hover {
-  @apply flex-slide;
+  .slide:hover {
+    @apply flex-slide;
+  }
 }

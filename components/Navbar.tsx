@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Avatar from '../components/Nav/Avatar';
 import Banner from '../components/Nav/Banner';
+import ThemeToggle from '../components/Nav/ThemeToggle';
 
 const Navbar = () => {
   const router = useRouter();
@@ -24,23 +25,19 @@ const Navbar = () => {
 
         <div className="flex items-center gap-8 mt-4 sm:mt-0">
           <Link href="/#navRef" passHref legacyBehavior>
-            <a className="nav-link hover:text-teal-500 underline underline-offset-4">
-              Accueil
-            </a>
+            <a className="nav-link underline underline-offset-4">Accueil</a>
           </Link>
 
           <Link href="/blog" passHref legacyBehavior>
-            <a className="nav-link hover:text-teal-500 underline underline-offset-4">
-              Blog
-            </a>
+            <a className="nav-link underline underline-offset-4">Blog</a>
           </Link>
 
           <Link href="/portfolio" passHref legacyBehavior>
-            <a className="nav-link hover:text-teal-500 underline underline-offset-4">
-              Portfolio
-            </a>
+            <a className="nav-link underline underline-offset-4">Portfolio</a>
           </Link>
         </div>
+
+        <ThemeToggle />
       </nav>
     </>
   );

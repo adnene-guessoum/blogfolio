@@ -2,7 +2,7 @@ const Coeur = () => {
   return (
     <div className="coeur">
       <h2 className="subtitle text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
-        En ce moment :
+        Le coin plus personnel :
       </h2>{' '}
       <div className="contact-container border border-slate-500 m-6 p-10 flex justify-between">
         <ul className="bg-gray-800 p-4 rounded-lg w-full">

@@ -8,12 +8,11 @@
   }
 
   html {
-    background-color: #131516;
+    @apply bg-gray-50 dark:bg-ivory-black text-gray-50 dark:text-ivory-black;
   }
 
   body {
     font-family: 'Roboto', sans-serif;
-    color: #cdc8c2;
   }
 
   h1 {
@@ -21,6 +20,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 2.5rem;
+    @apply dark:text-gold-leaf text-indigo-800;
   }
 
   h2,
@@ -31,14 +31,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-  }
-
-  a {
-    color: #cdc8c2;
+    @apply dark:text-gold-leaf text-indigo-800;
   }
 
   a:hover {
     @apply text-teal-500 underline underline-offset-2;
+  }
+
+  .border {
+    @apply dark:border-my-green border-yellow-700 shadow-lg rounded-lg shadow-yellow-700 dark:shadow-my-green;
   }
 }
 

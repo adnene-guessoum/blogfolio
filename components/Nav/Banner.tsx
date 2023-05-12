@@ -41,32 +41,36 @@ const Banner = (): JSX.Element => {
   }
 
   return (
-    <div className="hidden md:flex flex-col justify-center items-center text-center w-full h-screen bg-banner bg-cover">
+    <div className="hidden xl:flex flex-col justify-center items-center text-center w-full h-screen bg-banner bg-cover">
       <div className="w-2/3 p-1 backdrop-blur-lg">
         <h1
           id="banner-title"
           ref={titleRef}
-          className="text-8xl lg:text-9xl mb-10"
+          className="text-8xl lg:text-9xl mb-10 text-gold-leaf"
           style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
         >
-          AGSF{' '}
+          Guessoum.dev{' '}
         </h1>
-        <div id="banner-subtitle" ref={subtitleRef} className="text-5xl">
+        <div
+          id="banner-subtitle"
+          ref={subtitleRef}
+          className="text-5xl text-white"
+        >
           <span
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           >
-            Développement web pour
+            Développement web
           </span>
           <span
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           >
             {' '}
-            PME et indépendants
+            sur mesure pour tous
           </span>
         </div>
       </div>
       <div className="absolute bottom-0 mb-10">
-        <div className="text-3xl flex flex-col justify-center items-center cursor-pointer">
+        <div className="text-3xl text-white flex flex-col justify-center items-center cursor-pointer">
           Continuer
           <SlArrowDownCircle
             onClick={handleClick}

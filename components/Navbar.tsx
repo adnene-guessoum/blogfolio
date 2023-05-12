@@ -23,7 +23,7 @@ const Navbar = () => {
       >
         <Avatar />
 
-        <div className="flex items-center gap-8 mt-4 sm:mt-0">
+        <div className="flex items-center gap-4 lg:gap-8 mt-4 sm:mt-0">
           <Link href="/#navRef" passHref legacyBehavior>
             <a className="nav-link underline underline-offset-4">Accueil</a>
           </Link>
@@ -35,9 +35,9 @@ const Navbar = () => {
           <Link href="/portfolio" passHref legacyBehavior>
             <a className="nav-link underline underline-offset-4">Portfolio</a>
           </Link>
-        </div>
 
-        <ThemeToggle />
+          <ThemeToggle />
+        </div>
       </nav>
     </>
   );

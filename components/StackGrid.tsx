@@ -84,7 +84,7 @@ const TechStackGrid = () => {
   };
 
   return (
-    <div className="w-full flex justify-center mb-8 mt-8 p-4 border bg-slate-700 rounded-md">
+    <div className="w-full flex justify-center mb-8 mt-8 p-4 border bg-slate-300 dark:bg-slate-700 rounded-md">
       <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-10 gap-20">
         {Object.values(techImg).map(tech => {
           return techLogos(tech[0], tech[1]);

@@ -49,7 +49,7 @@ const Projects = () => {
             return (
               <article
                 key={repo.id}
-                className="article flex flex-col border p-2 bg-slate-700 rounded-md items-start justify-center"
+                className="article flex flex-col border p-2 bg-slate-300 dark:bg-slate-700 rounded-md items-start justify-center"
               >
                 <h2 className="text-2xl font-bold">
                   <a href={repo.svn_url} target="_blank" className="flex gap-2">
@@ -99,7 +99,7 @@ const Projects = () => {
             return (
               <article
                 key={repo.id}
-                className="article flex flex-col border p-2 bg-slate-700 rounded-md items-start justify-center"
+                className="article flex flex-col border p-2 bg-slate-300 dark:bg-slate-700 rounded-md items-start justify-center"
               >
                 <h2 className="text-2xl font-bold">
                   <a href={repo.svn_url} target="blank" className="flex gap-2">

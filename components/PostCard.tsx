@@ -4,7 +4,7 @@ import MyLink from './general/Link';
 const PostCard = ({ post, index }) => {
   return (
     <div
-      className="flex flex-row gap-5 items-center border border-slate-700 shadow-lg p-1 min-w-fit"
+      className="flex flex-wrap gap-5 items-center justify-center sm:justify-start border border-slate-700 shadow-lg p-1 min-w-fit"
       key={index}
     >
       <div className="image-container">

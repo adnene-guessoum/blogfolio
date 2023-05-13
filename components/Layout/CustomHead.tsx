@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
+import { useRouter } from 'next/router';
 
 export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
 
-const CustomHead = ({ customMeta, router }) => {
+const CustomHead = ({ customMeta }) => {
+  const router = useRouter();
+
   const meta = {
     title: 'Blogfolio - Adnene Guessoum',
     description:

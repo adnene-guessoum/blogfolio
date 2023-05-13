@@ -21,8 +21,8 @@ export async function getStaticProps() {
   });
 
   const sortByDate = (a, b) => {
-    const dateA = new Date(a.frontMatter.date);
-    const dateB = new Date(b.frontMatter.date);
+    const dateA = new Date(a.frontMatter.date).getTime();
+    const dateB = new Date(b.frontMatter.date).getTime();
     return dateB - dateA;
   };
 

@@ -2,9 +2,18 @@ import Navbar from '../Navbar';
 import CustomHead from './CustomHead';
 import { useRouter } from 'next/router';
 
+type LayoutProps = {
+  children: React.ReactNode;
+  customMeta?: {
+    title?: string;
+    description?: string;
+    image?: string;
+  };
+};
+
 export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
 
-const MainLayout = ({ children, customMeta }) => {
+const MainLayout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   const router = useRouter();
 
   return (

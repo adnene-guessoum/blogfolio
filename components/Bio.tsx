@@ -43,8 +43,8 @@ const Bio = (): JSX.Element => {
           </h3>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 w-full">
-          <div className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-wrap justify-around border">
+        <div className="flex flex-wrap justify-center items-center gap-4">
+          <div className=" w-4/5 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-wrap justify-around border">
             <a
               href="https://bakery-proposal.vercel.app/"
               target="_blank"
@@ -90,7 +90,7 @@ const Bio = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-wrap justify-around border">
+          <div className=" w-4/5 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-wrap justify-around border">
             <a
               href="https://orly-insoumise.vercel.app/"
               target="_blank"

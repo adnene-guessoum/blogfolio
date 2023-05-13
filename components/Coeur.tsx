@@ -11,13 +11,15 @@ const Coeur = () => {
               Tech :
               <a
                 href="https://doc.rust-lang.org/book/"
-                className="text-lg underline underline-offset-4 ml-2 font-medium text-gray-400 hover:text-gray-500"
+                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
                 target="_blank"
               >
                 Le Livre Rust{' '}
               </a>
             </p>
-            <p className="text-gray-400">Par la Rust foundation</p>
+            <p className="text-gray-600 dark:text-gray-400">
+              Par la Rust foundation
+            </p>
             <p className="m-2">
               Rust est un langage de programmation système conçu pour être sûr,
               rapide et concurrent. Il a été créé initialement par Mozilla en
@@ -36,13 +38,15 @@ const Coeur = () => {
               Lecture :
               <a
                 href="https://gallica.bnf.fr/ark:/12148/bpt6k102435w.texteImage"
-                className="text-lg underline underline-offset-4 ml-2 font-medium text-gray-400 hover:text-gray-500"
+                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
                 target="_blank"
               >
                 Les Essais{' '}
               </a>
             </p>{' '}
-            <p className="text-gray-400">Par Michel De Montaigne </p>
+            <p className="text-gray-600 dark:text-gray-400">
+              Par Michel De Montaigne{' '}
+            </p>
             <p className="m-2">
               Exploration d&apos;une grande variété de sujets, allant de la
               philosophie et de la politique à la religion et à la culture. Les
@@ -56,13 +60,15 @@ const Coeur = () => {
               Jeu :
               <a
                 href="https://www.jeuxvideo.com/jeux/playstation-4-ps4/00053069-bloodborne.htm"
-                className="text-lg underline underline-offset-4 ml-2 font-medium text-gray-400 hover:text-gray-500"
+                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
                 target="_blank"
               >
                 Bloodborne{' '}
               </a>
             </p>{' '}
-            <p className="text-gray-400">Par From Software</p>
+            <p className="text-gray-600 dark:text-gray-400">
+              Par From Software
+            </p>
             <p className="m-2">
               Grand fan des jeux from software, je suis arrivée douloureusement
               au bout de Sekiro il y a quelques mois. Aprés Demon Souls, DS1,

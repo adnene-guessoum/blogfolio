@@ -1,4 +1,4 @@
-import Layout, { WEBSITE_HOST_URL } from '../../components/Layout/main.tsx';
+import Layout, { WEBSITE_HOST_URL } from '../../components/Layout/main';
 import React from 'react';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 
-const Bio = () => {
+const Bio = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-justify text-center w-4/5">
@@ -85,8 +85,7 @@ const Bio = () => {
               </a>
 
               <div className="text-lg font-serif font-bold shadow-sm">
-                Site internet / blog pour le groupe d&apos;action politique Orly
-                Insoumise.
+                Modèle / Template pour présentation de projet de cakeshop.
               </div>
             </div>
           </div>

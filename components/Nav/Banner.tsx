@@ -13,10 +13,10 @@ const Banner = (): JSX.Element => {
 
   function animateString() {
     // create character level splits - variables not reused
-    let _ = new SplitType(titleRef.current);
-    let __ = new SplitType(subtitleRef.current);
+    const _ = new SplitType(titleRef.current);
+    const __ = new SplitType(subtitleRef.current);
 
-    let characters = document.querySelectorAll('.char');
+    const characters = document.querySelectorAll('.char');
 
     for (let i = 0; i < characters.length; i++) {
       characters[i].classList.add('translate-y-full');

@@ -12,7 +12,7 @@ function Blogfolio({ Component, pageProps, customMeta, router }) {
   }
 
   return (
-    <ThemeProvider attribute="class" enableSystem="false" defaultTheme="dark">
+    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
       <Layout customMeta={customMeta} router={router}>
         <div className="container">
           <main>

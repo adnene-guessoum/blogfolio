@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "test-all": "npm run prettier && npm run lint && npm run test",
+    "test-all": "npm run prettier && npm run lint && npm run type-check && npm run test",
+    "type-check": "tsc --noEmit --pretty",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

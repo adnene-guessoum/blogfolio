@@ -6,10 +6,13 @@ const Bio = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-justify text-center w-4/5">
-        <h2 className="subtitle text-6xl font-serif font-bold mb-4 shadow-sm pl-2 ">
-          Bienvenue
+        <h2
+          data-testid="index-title"
+          className="subtitle text-6xl font-serif font-bold mb-4 shadow-sm pl-2 "
+        >
+          Bienvenue Sur Mon Blogfolio !
         </h2>
-        <div className="flex flex-col gap-5 m-4 p-2">
+        <div data-testid="bio-section" className="flex flex-col gap-5 m-4 p-2">
           <h3 className="text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
             Présentation
           </h3>

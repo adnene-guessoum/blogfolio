@@ -11,8 +11,6 @@ const Projects = () => {
     getRepos().then(res => setRepos(res.data));
   }, []);
 
-  console.log(repos);
-
   const toIncludeOpenSource = ['shap'];
 
   const toIncludeProjects = [
@@ -27,13 +25,10 @@ const Projects = () => {
 
   const toIncludeExercises = [
     'SignUpForm',
-    'guessing_game',
-    'basic_http_server_node',
     'admin-dashboard',
     'landing_page',
     'calculator',
-    'etch-a-sketch',
-    'admin-dashboard'
+    'etch-a-sketch'
   ];
 
   return (

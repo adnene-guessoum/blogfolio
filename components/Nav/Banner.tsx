@@ -49,7 +49,7 @@ const Banner = (): JSX.Element => {
           className="text-8xl lg:text-9xl mb-10 text-gold-leaf"
           style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
         >
-          Guessoum.dev{' '}
+          adnene.dev{' '}
         </h1>
         <div
           id="banner-subtitle"
@@ -65,7 +65,7 @@ const Banner = (): JSX.Element => {
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           >
             {' '}
-            sur mesure pour tous
+            et data science
           </span>
         </div>
       </div>

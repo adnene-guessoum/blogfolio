@@ -75,10 +75,6 @@ const Coeur = () => {
               DS3, Elden Ring et les cinq premières heures de DS2 (...). Il ne
               restait donc plus que celui-là. Et aprés, que fera-t-on ? On verra
               bien ce qu&apos;Armored Core vaut j&apos;imagine.
-              <br />
-              <br />
-              En attendant, je n&apos;en suis qu&apos;au &quot;Monstre
-              Clerical&quot;, ce qui laisse le temps de voir venir.
             </p>
           </li>
         </ul>

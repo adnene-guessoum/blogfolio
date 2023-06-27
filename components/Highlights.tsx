@@ -4,57 +4,6 @@ const Highlights = () => {
   return (
     <div className="flex w-full h-96 lg:h-[38em] items-center justify-center border border-black dark:border-white">
       <div className="flex w-full h-full border">
-        <div className="group slide bg-thumbDash flex flex-col justify-end">
-          <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
-            <h3 className=" text-xl text-gold-leaf font-bold">
-              Prédiction défaut crédit
-            </h3>
-            <p className="text-white text-sm">ML Xgboost Flask Python</p>
-            <a
-              className="hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
-              href="https://github.com/adnene-guessoum/Projet_scoring_credit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              repo Github
-            </a>
-            <a
-              className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
-              href="https://adnene-guessoum-projet-scoring--appdashboard-withnavbar-povy74.streamlit.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Déploiement Streamlit - Heroku
-            </a>
-          </div>
-        </div>
-        <div className="group slide bg-thumbOrly flex flex-col justify-end">
-          <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-2/3 w-full p-2 rounded-xl">
-            <h3 className=" text-xl text-gold-leaf font-bold">
-              Freelance Frontend
-            </h3>
-            <p className="text-white text-sm">
-              Next.js React Typescript Tailwind EmailJS
-            </p>
-            <a
-              className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
-              href="https://github.com/adnene-guessoum/Orly-insoumise"
-              target="_blank"
-              rel="noreferrer"
-            >
-              repo github (autorisée)
-            </a>
-
-            <a
-              className="hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
-              href="https://orly-insoumise.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Déploiement Vercel
-            </a>
-          </div>
-        </div>
         <div className="group slide bg-thumbAsser flex items-end justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
             <h3 className="text-xl text-gold-leaf font-bold">Clone Frontend</h3>
@@ -87,6 +36,61 @@ const Highlights = () => {
             </div>
           </div>
         </div>
+
+        <div className="group slide bg-thumbDash flex flex-col justify-end">
+          <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
+            <h3 className=" text-xl text-gold-leaf font-bold">
+              Prédiction défaut crédit
+            </h3>
+            <p className="text-white text-sm">ML Xgboost Flask Python</p>
+            <a
+              className="hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
+              href="https://github.com/adnene-guessoum/Dashboard_Credit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              repo Github
+            </a>
+            {/* PROJET EN MAINTENANCE SHAP
+            <a
+              className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
+              href="https://adnene-guessoum-projet-scoring--appdashboard-withnavbar-povy74.streamlit.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Déploiement Streamlit - Heroku
+            </a>
+					*/}
+          </div>
+        </div>
+        <div className="group slide bg-thumbOrly flex flex-col justify-end">
+          <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-2/3 w-full p-2 rounded-xl">
+            <h3 className=" text-xl text-gold-leaf font-bold">
+              Freelance Frontend
+            </h3>
+            <p className="text-white text-sm">
+              Next.js React Typescript Tailwind EmailJS
+            </p>
+            <a
+              className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
+              href="https://github.com/adnene-guessoum/Orly-insoumise"
+              target="_blank"
+              rel="noreferrer"
+            >
+              repo github (autorisée)
+            </a>
+
+            <a
+              className="hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
+              href="https://orly-insoumise.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Déploiement Vercel
+            </a>
+          </div>
+        </div>
+
         <div className="group slide bg-thumbOwl flex justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 h-1/3 p-2 rounded-xl">
             <h3 className=" text-xl text-gold-leaf font-bold">Portfolio 1.0</h3>

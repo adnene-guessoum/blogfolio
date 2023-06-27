@@ -39,7 +39,7 @@ const Blog = ({ posts }) => {
       <h1 className="text-5xl border-b-4 p-5 font-bold underline">Blog</h1>
       <div className="border flex flex-col my-10">
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-          Code :
+          Tech :
         </h2>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -49,6 +49,7 @@ const Blog = ({ posts }) => {
             }
           })}
         </div>
+        {/* DOUBLON PAS NECESSAIRE POUR LE MOMENT
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
           Tech :
         </h2>
@@ -59,6 +60,7 @@ const Blog = ({ posts }) => {
             }
           })}
         </div>
+				*/}
 
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
           Divers :

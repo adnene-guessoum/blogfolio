@@ -10,7 +10,7 @@ const Bio = (): JSX.Element => {
           data-testid="index-title"
           className="subtitle text-6xl font-serif font-bold mb-4 shadow-sm pl-2 "
         >
-          Bienvenue Sur Mon Blogfolio !
+          Bienvenue !
         </h2>
         <div data-testid="bio-section" className="flex flex-col gap-5 m-4 p-2">
           <h3 className="text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
@@ -42,7 +42,7 @@ const Bio = (): JSX.Element => {
             nature.
           </p>
           <h3 className="text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
-            Derniers projets réalisés :
+            Exemples projets réalisés :
           </h3>
         </div>
 

@@ -10,9 +10,7 @@ describe('IndexPage', () => {
     render(<IndexPage />);
 
     expect(screen.getByTestId('accueil')).toBeInTheDocument();
-    expect(screen.getByTestId('index-title')).toHaveTextContent(
-      'Bienvenue Sur Mon Blogfolio !'
-    );
+    expect(screen.getByTestId('index-title')).toHaveTextContent('Bienvenue !');
     expect(screen.getByTestId('bio-section')).toBeInTheDocument();
   });
 });

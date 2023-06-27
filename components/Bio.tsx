@@ -1,7 +1,3 @@
-import Image from 'next/image';
-import { FaGithub } from 'react-icons/fa';
-import { BsBoxArrowUpRight } from 'react-icons/bs';
-
 const Bio = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-center">

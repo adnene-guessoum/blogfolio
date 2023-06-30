@@ -18,8 +18,8 @@ const Bio = (): JSX.Element => {
               développeur web{' '}
             </span>{' '}
             basé à Orly, dans le Val-de-Marne (94). Je travaille principalement
-            en Javascript/Typescript et Python (React, Next, Django). Je suis
-            disponible pour des missions en télétravail ou sur site en{' '}
+            en Javascript/Typescript et Python (React, Next, Flask, etc.). Je
+            suis disponible pour des missions en télétravail ou sur site en{' '}
             <span className="text-blue-700 dark:text-blue-300">
               île-de-france
             </span>

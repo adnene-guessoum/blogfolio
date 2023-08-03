@@ -1,22 +1,12 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import Avatar from '../components/Nav/Avatar';
 import Banner from '../components/Nav/Banner';
 import ThemeToggle from '../components/Nav/ThemeToggle';
 
 const Navbar = () => {
-  const router = useRouter();
-
-  let banner;
-  if (router.pathname === '/') {
-    banner = <Banner />;
-  } else {
-    banner = null;
-  }
-
   return (
     <>
-      {banner}
+      <Banner />
       <nav
         id="navRef"
         className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center"

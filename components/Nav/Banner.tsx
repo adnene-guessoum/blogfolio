@@ -1,9 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { SlArrowDownCircle } from 'react-icons/sl';
 import { gsap } from 'gsap';
 import SplitType from 'split-type';
 
 const Banner = (): JSX.Element => {
+  const [hidden, setHidden] = useState(false);
+
   const titleRef = useRef<HTMLDivElement>(null);
   const subtitleRef = useRef<HTMLDivElement>(null);
 
@@ -38,48 +40,56 @@ const Banner = (): JSX.Element => {
       block: 'start',
       inline: 'nearest'
     });
+
+    setTimeout(() => {
+      setHidden(true);
+    }, 1000);
   }
 
-  return (
-    <div className="hidden xl:flex flex-col justify-center items-center text-center w-full h-screen bg-banner bg-cover">
-      <div className="w-2/3 p-1 backdrop-blur-lg">
-        <h1
-          id="banner-title"
-          ref={titleRef}
-          className="text-8xl lg:text-9xl mb-10 text-gold-leaf"
-          style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
-        >
-          adnene.dev{' '}
-        </h1>
-        <div
-          id="banner-subtitle"
-          ref={subtitleRef}
-          className="text-5xl text-white"
-        >
-          <span
+  if (hidden) {
+    return null;
+  } else {
+    return (
+      <div className="hidden xl:flex flex-col justify-center items-center text-center w-full h-screen bg-banner bg-cover">
+        <div className="w-2/3 p-1 backdrop-blur-lg">
+          <h1
+            id="banner-title"
+            ref={titleRef}
+            className="text-8xl lg:text-9xl mb-10 text-gold-leaf"
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           >
-            Développement web
-          </span>
-          <span
-            style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
+            adnene.dev{' '}
+          </h1>
+          <div
+            id="banner-subtitle"
+            ref={subtitleRef}
+            className="text-5xl text-white"
           >
-            {' '}
-            et data science
-          </span>
+            <span
+              style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
+            >
+              Développement web
+            </span>
+            <span
+              style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
+            >
+              {' '}
+              et data science
+            </span>
+          </div>
+        </div>
+        <div className="absolute bottom-0 mb-10">
+          <div className="text-3xl text-white flex flex-col justify-center items-center cursor-pointer">
+            Continuer
+            <SlArrowDownCircle
+              onClick={() => handleClick()}
+              className="text-5xl animate-bounce mt-6"
+            />
+          </div>
         </div>
       </div>
-      <div className="absolute bottom-0 mb-10">
-        <div className="text-3xl text-white flex flex-col justify-center items-center cursor-pointer">
-          Continuer
-          <SlArrowDownCircle
-            onClick={handleClick}
-            className="text-5xl animate-bounce mt-6"
-          />
-        </div>
-      </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Banner;

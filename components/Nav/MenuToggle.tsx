@@ -44,23 +44,23 @@ const MenuToggle = () => {
             </li>
 
             <li className="py-2">
-              <Link href="/portfolio" passHref legacyBehavior>
-                <a
-                  className="nav-link underline underline-offset-4"
-                  onClick={toggleMenu}
-                >
-                  Portfolio
-                </a>
-              </Link>
-            </li>
-
-            <li className="py-2">
               <Link href="/extra" passHref legacyBehavior>
                 <a
                   className="nav-link underline underline-offset-4"
                   onClick={toggleMenu}
                 >
                   Extra
+                </a>
+              </Link>
+            </li>
+
+            <li className="py-2">
+              <Link href="/portfolio" passHref legacyBehavior>
+                <a
+                  className="nav-link underline underline-offset-4"
+                  onClick={toggleMenu}
+                >
+                  Projets
                 </a>
               </Link>
             </li>

@@ -25,12 +25,12 @@ const Navbar = () => {
               <a className="nav-link underline underline-offset-4">Blog</a>
             </Link>
 
-            <Link href="/portfolio" passHref legacyBehavior>
-              <a className="nav-link underline underline-offset-4">Portfolio</a>
-            </Link>
-
             <Link href="/extra" passHref legacyBehavior>
               <a className="nav-link underline underline-offset-4">Extra</a>
+            </Link>
+
+            <Link href="/portfolio" passHref legacyBehavior>
+              <a className="nav-link underline underline-offset-4">Projets</a>
             </Link>
           </div>
 

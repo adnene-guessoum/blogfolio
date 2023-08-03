@@ -28,7 +28,7 @@ const FoldableArchive = ({ posts }): JSX.Element => {
                 {posts.map((post, index) => (
                   <tr
                     key={index}
-                    className="bg-white border shadow-none dark:bg-gray-900 dark:border-gray-700 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    className="bg-white border shadow-none dark:bg-gray-800 dark:border-gray-700 flex flex-col sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
                   >
                     <td
                       key={index}

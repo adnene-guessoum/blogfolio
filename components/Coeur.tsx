@@ -1,8 +1,8 @@
 const Coeur = () => {
   return (
     <div className="coeur">
-      <h2 className=" underline border-b-4 p-5 subtitle text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
-        Espace Perso :
+      <h2 className=" underline subtitle text-4xl font-serif font-bold shadow-sm pl-2 mt-4 ">
+        Coup de coeur :
       </h2>{' '}
       <div className="contact-container border border-slate-500 m-6 p-10 flex justify-between">
         <ul className="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg w-full">

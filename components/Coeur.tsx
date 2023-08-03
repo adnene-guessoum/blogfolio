@@ -4,7 +4,7 @@ const Coeur = () => {
       <h2 className=" underline subtitle text-4xl font-serif font-bold shadow-sm pl-2 mt-4 ">
         Coup de coeur :
       </h2>{' '}
-      <div className="contact-container border border-slate-500 m-6 p-10 flex justify-between">
+      <div className="contact-container border border-slate-500 sm:m-6 sm:p-10 p-2 m-2 flex justify-between">
         <ul className="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg w-full">
           <li className="border-b-2 border-gray-700 py-4">
             <p className="text-lg font-medium">

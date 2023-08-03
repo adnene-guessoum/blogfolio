@@ -2,7 +2,7 @@ import { BsBoxArrowUpRight, BsCalendarDate, BsStar } from 'react-icons/bs';
 import { AiFillTag } from 'react-icons/ai';
 import { VscRepoForked } from 'react-icons/vsc';
 import React, { useEffect, useState } from 'react';
-import { getRepos } from '../lib/getRepos';
+import { getRepos } from '../libs/getRepos';
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);

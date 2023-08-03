@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Coeur from '../components/Coeur';
 import PostCard from '../components/PostCard';
+import VoxelOwl from '../components/voxel-owl';
 
 export async function getStaticProps() {
   const files = fs.readdirSync(path.join('publications'));
@@ -34,8 +35,14 @@ export async function getStaticProps() {
 
 const Extra = ({ posts }) => {
   return (
-    <>
-      <h1 className="text-5xl border-b-4 p-5 font-bold underline">Extra :</h1>
+    <div className="extra">
+      <div className="flex flex-wrap justify-around items-center">
+        <h1 className="text-5xl border-b-4 p-5 font-bold underline w-1/3">
+          Espace détente :
+        </h1>
+
+        <VoxelOwl />
+      </div>
 
       <h2 className=" underline subtitle text-4xl font-serif font-bold shadow-sm pl-2 mt-4 ">
         Cogitations et Pérégrinations :
@@ -74,7 +81,7 @@ const Extra = ({ posts }) => {
       </div>
       <hr />
       <Coeur />
-    </>
+    </div>
   );
 };
 

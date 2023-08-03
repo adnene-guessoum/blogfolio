@@ -17,7 +17,7 @@ const MainLayout = ({ children, customMeta }: LayoutProps): JSX.Element => {
     <div className="layout min-h-screen bg-gray-50 dark:bg-ivory-black">
       <CustomHead customMeta={customMeta} />
       <Navbar />
-      <main className="flex justify-center main pt-10 m-4">{children}</main>
+      <main className="flex justify-center main pt-10 sm:m-4">{children}</main>
       <footer className="sticky top-[100vh] flex justify-center footer p-4 border border-slate-600">
         copyleft 2023 - Adnene Guessoum
       </footer>

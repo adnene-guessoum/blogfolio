@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-10">
       <div className="text-justify text-center w-4/5">
-        <h2 className="subtitle text-4xl font-serif font-bold mb-2 shadow-sm pl-2 ">
+        <h2 className="subtitle sm:text-4xl text-2xl font-serif font-bold mb-2 shadow-sm pl-2 ">
           Où me trouver ?
         </h2>
 
@@ -30,19 +30,12 @@ const Contact = () => {
             </MyLink>
           </button>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center">
-            <AiOutlineMail size={20} />
-            <MyLink href="mailto:adnen.guessoum@gmail.com">
-              adnen.guessoum@gmail.com
-            </MyLink>
-          </button>
-
           <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
             <SiLeetcode size={20} />
             <MyLink href="https://leetcode.com/adnene/">Leetcode</MyLink>
           </button>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
+          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-fit sm:w-1/6">
             <FaHackerrank size={20} />
             <MyLink href="https://www.hackerrank.com/adnen_guessoum">
               Hackerrank
@@ -52,6 +45,13 @@ const Contact = () => {
           <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
             <FaKaggle size={20} />
             <MyLink href="https://www.kaggle.com/adneneguessoum">Kaggle</MyLink>
+          </button>
+
+          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center">
+            <AiOutlineMail size={20} />
+            <MyLink href="mailto:adnen.guessoum@gmail.com">
+              adnen.guessoum@gmail.com
+            </MyLink>
           </button>
         </div>
       </div>

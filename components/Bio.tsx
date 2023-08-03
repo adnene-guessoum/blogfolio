@@ -1,15 +1,18 @@
 const Bio = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="text-justify text-center w-4/5">
+      <div className="text-justify text-center sm:w-4/5">
         <h2
           data-testid="index-title"
           className="subtitle text-6xl font-serif font-bold mb-4 shadow-sm pl-2 "
         >
           Bienvenue !
         </h2>
-        <div data-testid="bio-section" className="flex flex-col gap-5 m-4 p-2">
-          <h3 className="text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
+        <div
+          data-testid="bio-section"
+          className="flex flex-col gap-5 sm:m-4 p-2"
+        >
+          <h3 className="sm:text-4xl text-2xl font-serif font-bold mb-4 shadow-sm pl-2 ">
             Présentation
           </h3>
           <p className="text-2xl font-serif font-bold mb-4 shadow-sm pl-2 ">
@@ -37,11 +40,10 @@ const Bio = (): JSX.Element => {
             . N&apos;hésitez pas à faire appel à moi pour vos projets de toute
             nature.
           </p>
-          <h3 className="text-4xl font-serif font-bold mb-4 shadow-sm pl-2 ">
+          <h3 className="sm:text-4xl text-2xl font-serif font-bold mb-4 shadow-sm pl-2 ">
             Exemples projets réalisés :
           </h3>
         </div>
-        {/* Latest Here */}
       </div>
     </div>
   );

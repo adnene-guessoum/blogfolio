@@ -37,7 +37,7 @@ const Extra = ({ posts }) => {
   return (
     <div className="extra">
       <div className="flex flex-wrap justify-around items-center">
-        <h1 className="text-5xl border-b-4 p-5 font-bold underline w-1/3">
+        <h1 className="text-5xl text-center border-b-4 p-5 font-bold underline sm:w-1/3">
           Espace détente :
         </h1>
 

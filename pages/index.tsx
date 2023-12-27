@@ -1,6 +1,5 @@
 import Bio from '../components/Bio';
 import Contact from '../components/Contact';
-import Latest from '../components/Latest';
 
 const Accueil = (): JSX.Element => {
   return (
@@ -9,7 +8,6 @@ const Accueil = (): JSX.Element => {
       data-testid="accueil"
     >
       <Bio />
-      <Latest />
       <Contact />
     </div>
   );

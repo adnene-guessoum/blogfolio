@@ -55,7 +55,7 @@ const Banner = (): JSX.Element => {
           <h1
             id="banner-title"
             ref={titleRef}
-            className="text-8xl lg:text-9xl mb-10 text-gold-leaf"
+            className="text-8xl lg:text-9xl mb-10"
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }}
           >
             adnene.dev{' '}

@@ -1,17 +1,13 @@
 import Link from 'next/link';
 import Avatar from '../components/Nav/Avatar';
-import Banner from '../components/Nav/Banner';
+//import Banner from '../components/Nav/Banner';
 import ThemeToggle from '../components/Nav/ThemeToggle';
 import MenuToggle from '../components/Nav/MenuToggle';
 
 const Navbar = () => {
   return (
     <>
-      <Banner />
-      <nav
-        id="navRef"
-        className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center"
-      >
+      <nav className="flex flex-col sm:flex-row justify-around nav py-4 px-6 items-center">
         <Avatar />
 
         <div className="flex justify-center gap-4 lg:gap-8 mt-4 sm:mt-0">

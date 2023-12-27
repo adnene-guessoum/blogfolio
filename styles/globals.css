@@ -7,10 +7,6 @@
     @apply flex-auto;
   }
 
-  html {
-    @apply bg-gray-50 dark:bg-ivory-black text-gray-50 dark:text-ivory-black;
-  }
-
   body {
     font-family: 'Roboto', sans-serif;
   }
@@ -20,7 +16,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 2.5rem;
-    @apply dark:text-gold-leaf text-indigo-800;
+    @apply text-indigo-800 dark:text-indigo-200;
   }
 
   h2,
@@ -31,15 +27,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    @apply dark:text-gold-leaf text-indigo-800;
+    @apply text-indigo-800 dark:text-indigo-200 underline underline-offset-2;
   }
 
   a:hover {
-    @apply text-teal-500 underline underline-offset-2;
+    @apply text-gray-500 underline underline-offset-2;
   }
 
   .border {
-    @apply dark:border-my-green border-yellow-700 shadow-lg rounded-lg shadow-yellow-700 dark:shadow-my-green;
+    @apply shadow-lg rounded-lg;
   }
 }
 

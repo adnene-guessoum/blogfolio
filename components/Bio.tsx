@@ -30,12 +30,8 @@ const Bio = (): JSX.Element => {
           <p className="text-2xl font-serif font-bold mb-4 shadow-sm pl-2 ">
             Mais surtout, j&apos;utilise mon temps libre en projets personnels,
             open source et en discussions en tout genres que je partage ici.
-            J&apos;espère que vous trouverez ici quelque chose qui vous
-            intéresse !
+            J&apos;espère que vous trouverez quelque chose qui vous intéresse !
           </p>
-          <h3 className="sm:text-4xl text-2xl font-serif font-bold mb-4 shadow-sm pl-2 ">
-            Quelques exemples :
-          </h3>
         </div>
       </div>
     </div>

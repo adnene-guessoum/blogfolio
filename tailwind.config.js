@@ -21,8 +21,6 @@ module.exports = {
         thumbBlog: "url('/images/thumbnails/thumbnail_django.png')"
       },
       colors: {
-        'my-green': '#009B4D',
-        'gold-leaf': '#D9B310',
         'ivory-black': '#1D2731'
       },
       flex: {
@@ -33,11 +31,11 @@ module.exports = {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.gray.500'),
               '&:hover': {
-                color: theme('colors.blue.700')
+                color: theme('colors.gray.700')
               },
-              code: { color: theme('colors.blue.400') }
+              code: { color: theme('colors.gray.400') }
             },
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32]
@@ -50,11 +48,11 @@ module.exports = {
             css: {
               color: theme('colors.gray.300'),
               a: {
-                color: theme('colors.blue.400'),
+                color: theme('colors.gray.400'),
                 '&:hover': {
-                  color: theme('colors.blue.600')
+                  color: theme('colors.gray.600')
                 },
-                code: { color: theme('colors.blue.400') }
+                code: { color: theme('colors.gray.400') }
               },
               blockquote: {
                 borderLeftColor: theme('colors.gray.700'),

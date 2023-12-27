@@ -38,6 +38,11 @@ const Projects = () => {
         Contributions projets Open Source:
       </h3>
 			*/}
+
+      <h3 className="text-2xl font-bold underline underline-offset-2">
+        Contributions projets Open Source:
+      </h3>
+
       <section className="articles projets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {repos
           .filter(repo => {

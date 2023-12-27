@@ -11,7 +11,7 @@ const Coeur = () => {
               Tech :
               <a
                 href="https://doc.rust-lang.org/book/"
-                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
+                className="text-lg underline underline-offset-4 ml-2 font-medium"
                 target="_blank"
               >
                 Le Livre Rust{' '}
@@ -38,7 +38,7 @@ const Coeur = () => {
               Lecture :
               <a
                 href="https://gallica.bnf.fr/ark:/12148/bpt6k102435w.texteImage"
-                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
+                className="text-lg underline underline-offset-4 ml-2 font-medium"
                 target="_blank"
               >
                 Les Essais{' '}
@@ -60,7 +60,7 @@ const Coeur = () => {
               Jeu :
               <a
                 href="https://www.jeuxvideo.com/jeux/playstation-4-ps4/00053069-bloodborne.htm"
-                className="text-lg underline underline-offset-4 ml-2 font-medium dark:text-gray-300 hover:text-my-green hover:dark:text-my-green"
+                className="text-lg underline underline-offset-4 ml-2 font-medium"
                 target="_blank"
               >
                 Bloodborne{' '}

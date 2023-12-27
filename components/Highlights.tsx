@@ -6,7 +6,7 @@ const Highlights = () => {
       <div className="flex w-full h-full border">
         <div className="group slide bg-thumbAsser flex items-end justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
-            <h3 className="text-xl text-gold-leaf font-bold">Clone Frontend</h3>
+            <h3 className="text-xl font-bold">Clone Frontend</h3>
             <p className="text-white text-sm">Next React Chakra-ui JS</p>
             <a
               className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
@@ -39,9 +39,7 @@ const Highlights = () => {
 
         <div className="group slide bg-thumbDash flex flex-col justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
-            <h3 className=" text-xl text-gold-leaf font-bold">
-              Prédiction défaut crédit
-            </h3>
+            <h3 className=" text-xl font-bold">Prédiction défaut crédit</h3>
             <p className="text-white text-sm">ML Xgboost Flask Python</p>
             <a
               className="hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
@@ -65,9 +63,7 @@ const Highlights = () => {
         </div>
         <div className="group slide bg-thumbOrly flex flex-col justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-2/3 w-full p-2 rounded-xl">
-            <h3 className=" text-xl text-gold-leaf font-bold">
-              Freelance Frontend
-            </h3>
+            <h3 className="text-xl font-bold">Freelance Frontend</h3>
             <p className="text-white text-sm">
               Next.js React Typescript Tailwind EmailJS
             </p>
@@ -93,7 +89,7 @@ const Highlights = () => {
 
         <div className="group slide bg-thumbOwl flex justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 h-1/3 p-2 rounded-xl">
-            <h3 className=" text-xl text-gold-leaf font-bold">Portfolio 1.0</h3>
+            <h3 className=" text-xl font-bold">Portfolio 1.0</h3>
             <p className="text-white text-sm">
               Next React Chakra three.js framer
             </p>
@@ -125,9 +121,7 @@ const Highlights = () => {
         </div>
         <div className="group slide bg-thumbGh flex items-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 md:w-1/2 w-full p-2 rounded-xl">
-            <h3 className="text-xl text-gold-leaf font-bold">
-              Mini CLI github
-            </h3>
+            <h3 className="text-xl font-bold">Mini CLI github</h3>
             <p className="text-white text-sm">Python Typer Poetry GithubAPI</p>
             <a
               className=" hover:text-orange-500 underline undeline-white text-white text-sm p-0 m-0"
@@ -150,9 +144,7 @@ const Highlights = () => {
 
         <div className="group slide bg-thumbBlog flex justify-end">
           <div className="hidden group-hover:flex flex-col justify-center items-center backdrop-blur bg-slate-500 h-1/4 p-2 rounded-xl">
-            <h3 className="text-xl text-gold-leaf font-bold">
-              Pipeline Déploiement / DevOps
-            </h3>
+            <h3 className="text-xl font-bold">Pipeline Déploiement / DevOps</h3>
             <p className="text-white text-sm">
               AWS Django React Psql Docker nginx
             </p>

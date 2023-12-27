@@ -23,7 +23,7 @@ const FoldableArchive = ({ posts }): JSX.Element => {
       <div className="flex flex-col justify-center items-center">
         {isFolded && (
           <div className="shadow-md sm:rounded-lg lg:w-1/2 mt-2">
-            <table className="w-full text-sm text-left text-gray-700 dark:text-gray-300">
+            <table className="table-auto w-full text-sm text-left text-gray-700 dark:text-gray-300">
               <tbody>
                 {posts.map((post, index) => (
                   <tr

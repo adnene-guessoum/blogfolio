@@ -36,7 +36,7 @@ const Blog = ({ posts }) => {
   return (
     <>
       <h1 className="text-5xl border-b-4 p-5 font-bold underline">Blog</h1>
-      <div className="border flex flex-col my-10">
+      <div className="flex flex-col my-10 ml-10">
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
           Pratique :
         </h2>

@@ -37,7 +37,7 @@ const Extra = ({ posts }) => {
   return (
     <div className="extra">
       <div className="flex flex-wrap justify-around items-center">
-        <h1 className="text-5xl text-center border-b-4 p-5 font-bold underline sm:w-1/3">
+        <h1 className="text-5xl text-center p-5 font-bold underline sm:w-1/3">
           Espace détente :
         </h1>
 
@@ -47,7 +47,7 @@ const Extra = ({ posts }) => {
       <h2 className=" underline subtitle text-4xl font-serif font-bold shadow-sm pl-2 mt-4 ">
         Cogitations et Pérégrinations :
       </h2>
-      <div className="border flex flex-col my-10">
+      <div className="flex flex-col my-10 ml-10">
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
           Société et lectures :
         </h2>
@@ -63,7 +63,7 @@ const Extra = ({ posts }) => {
           })}
         </div>
       </div>
-      <div className="border flex flex-col my-10">
+      <div className="flex flex-col my-10 ml-10">
         <h2 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
           Divertissements :
         </h2>

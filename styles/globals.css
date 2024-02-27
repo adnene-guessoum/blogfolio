@@ -31,7 +31,7 @@
   }
 
   a:hover {
-    @apply text-gray-500 underline underline-offset-2;
+    @apply text-gray-300 underline underline-offset-2;
   }
 
   .border {

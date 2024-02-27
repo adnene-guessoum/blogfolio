@@ -1,14 +1,14 @@
-import Bio from '../components/Bio';
-import Contact from '../components/Contact';
-
 const Accueil = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col gap-5 justify-center item-center"
+      className="flex flex-col justify-center item-center"
       data-testid="accueil"
     >
-      <Bio />
-      <Contact />
+      <p>Accueil</p>
+
+      <div className="flex flex-col justify-center items-center">
+        Hello World
+      </div>
     </div>
   );
 };

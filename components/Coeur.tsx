@@ -1,11 +1,11 @@
 const Coeur = () => {
   return (
     <div className="coeur">
-      <h2 className=" underline subtitle text-4xl font-serif font-bold shadow-sm pl-2 mt-4 ">
+      <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
         Coup de coeur :
       </h2>{' '}
-      <div className="contact-container border border-slate-500 sm:m-6 sm:p-10 p-2 m-2 flex justify-between">
-        <ul className="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg w-full">
+      <div className="contact-container sm:m-6 sm:p-10 p-2 m-2 flex justify-between">
+        <ul className="border border-slate-500 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg w-full">
           <li className="border-b-2 border-gray-700 py-4">
             <p className="text-lg font-medium">
               Tech :

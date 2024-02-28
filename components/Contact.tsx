@@ -14,21 +14,21 @@ const Contact = () => {
       <div className="contact-container flex flex-col justify-between items-center gap-4">
         <div className="group flex gap-4 justify-center items-center">
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <BsTwitter size={20} />
               <MyLink href="https://twitter.com/GuessoumAdnene">Twitter</MyLink>
             </button>
           </div>
 
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <BsGithub size={20} />
               <MyLink href="https://github.com/adnene-guessoum">Github</MyLink>
             </button>
           </div>
 
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <BsLinkedin size={20} />
               <MyLink href="https://www.linkedin.com/in/adnene-guessoum/">
                 Linkedin
@@ -39,14 +39,14 @@ const Contact = () => {
 
         <div className="flex justify-center items-center gap-4">
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <SiLeetcode size={20} />
               <MyLink href="https://leetcode.com/adnene/">Leetcode</MyLink>
             </button>
           </div>
 
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <FaHackerrank size={20} />
               <MyLink href="https://www.hackerrank.com/adnen_guessoum">
                 Hackerrank
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <FaKaggle size={20} />
               <MyLink href="https://www.kaggle.com/adneneguessoum">
                 Kaggle
@@ -66,7 +66,7 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <div>
-            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center bg-slate-900 hover:bg-slate-700 rounded-md">
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
               <AiOutlineMail size={20} />
               <MyLink href="mailto:adnen.guessoum@gmail.com">
                 adnen.guessoum@gmail.com

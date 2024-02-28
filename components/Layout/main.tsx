@@ -14,7 +14,7 @@ export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
 
 const MainLayout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
-    <div className="flex flex-row justify-center">
+    <div className="flex lg:flex-row flex-col justify-center">
       <CustomHead customMeta={customMeta} />
       <Navbar />
       <div className="bg-gray-50 dark:bg-ivory-black">

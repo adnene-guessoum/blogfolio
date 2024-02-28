@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 
 const Avatar = () => {
   return (
-    <div className="flex flex-col justify-around items-center p-4">
+    <div className="flex justify-around items-center">
       <Link
         href="/"
         className="hover:underline-indigo-800 hover:underline hover:underline-offset-2 mb-4"
@@ -17,12 +17,14 @@ const Avatar = () => {
             width="50"
             height="50"
           />
-          <h1 className="text-center text-2xl hover:underline-indigo-800 hover:underline hover:underline-offset-2 ml-2">
-            Blog - Guessoum.dev
-          </h1>
+          <h2 className="text-center text-2xl hover:underline-indigo-800 hover:underline hover:underline-offset-2 ml-2">
+            Guessoum.dev
+          </h2>
         </div>
       </Link>
-      <ThemeToggle />
+      <div className="flex">
+        <ThemeToggle />
+      </div>
     </div>
   );
 };

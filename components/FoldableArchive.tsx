@@ -10,8 +10,7 @@ const FoldableArchive = ({ posts }): JSX.Element => {
 
   return (
     <div className="mb-10">
-      <hr className="my-2" />
-      <div className="flex flex-row justify-between lg:justify-start lg:gap-2">
+      <div className="flex flex-row justify-between lg:justify-center lg:gap-2">
         <h2>Archives</h2>
         <button
           onClick={toggle}

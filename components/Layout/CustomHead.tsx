@@ -8,9 +8,9 @@ const CustomHead = ({ customMeta }) => {
   const router = useRouter();
 
   const meta = {
-    title: 'Blogfolio - Adnene Guessoum',
+    title: 'Blog - Guessoum.dev',
     description:
-      "Blog et portfolio d'Adnene Guessoum, développeur web fullstack, basé à Orly (94).",
+      "Blog d'Adnene Guessoum, développeur fullstack, basé à Orly (94).",
     image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
     type: 'website',
     ...customMeta
@@ -29,7 +29,7 @@ const CustomHead = ({ customMeta }) => {
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
       <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
-      <meta property="og:site_name" content="adnene.dev" />
+      <meta property="og:site_name" content="guessoum.dev" />
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:image" content={meta.image} />

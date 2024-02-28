@@ -9,8 +9,8 @@ const FoldableArchive = ({ posts }): JSX.Element => {
   };
 
   return (
-    <div className="mb-10">
-      <div className="flex flex-row justify-between lg:justify-center lg:gap-2">
+    <div className="mb-10 flex flex-col justify-center gap-2">
+      <div className="flex flex-row justify-center gap-2">
         <h2>Archives</h2>
         <button
           onClick={toggle}
@@ -21,8 +21,8 @@ const FoldableArchive = ({ posts }): JSX.Element => {
       </div>
       <div className="flex flex-col justify-center items-center">
         {isFolded && (
-          <div className="shadow-md sm:rounded-lg lg:w-1/2 mt-2">
-            <table className="w-full text-sm text-left text-gray-700 dark:text-gray-300">
+          <div className="shadow-md sm:rounded-lg ld:w-1/2 mt-2">
+            <table className="text-sm text-left text-gray-700 dark:text-gray-300">
               <tbody>
                 {posts.map((post, index) => (
                   <tr

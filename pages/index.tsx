@@ -36,66 +36,67 @@ export async function getStaticProps() {
 
 const Accueil = ({ posts }): JSX.Element => {
   return (
-    <>
+    <div className="md:h-full w-full">
       {/* Accueil - tech blog */}
-      <div className="h-screen">
-        <h2
-          id="tech-section"
-          className="text-5xl border-b-4 p-5 font-bold underline text-center"
-        >
-          Tech et Dev :
-        </h2>
-        <div className="lg:hidden flex">
-          <VoxelOwl />
-        </div>
-
-        <section className="flex flex-col my-10 ml-10">
-          <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-            Pratique :
-          </h3>
-          <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-            bouts de code, trucs et astuces, entraînements, etc.
-          </p>
-          <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-            {posts.map((post, index) => {
-              if (post.frontMatter.category === 'pratique') {
-                console.log(post);
-                return <PostCard post={post} index={index} key={index} />;
-              }
-            })}
-          </div>
-          <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-            Théorique :
-          </h3>
-          <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-            Paradigmes, concepts, lectures, etc.
-          </p>
-          <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
-            {posts.map((post, index) => {
-              if (post.frontMatter.category === 'theorique') {
-                return <PostCard post={post} index={index} key={index} />;
-              }
-            })}
-          </div>
-
-          <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-            Actualités et veille technologique :
-          </h3>
-          <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-            Nouveautés, événements, technologies, tendances, etc.
-          </p>
-          <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
-            {posts.map((post, index) => {
-              if (post.frontMatter.category === 'actu') {
-                return <PostCard post={post} index={index} key={index} />;
-              }
-            })}
-          </div>
-        </section>
+      <div className="lg:hidden flex">
+        <VoxelOwl />
       </div>
 
+      <section
+        id="tech-section"
+        className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
+      >
+        <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
+          Tech & Dev:
+        </h2>
+        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+          Pratique :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          bouts de code, trucs et astuces, entraînements, etc.
+        </p>
+        <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'pratique') {
+              console.log(post);
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
+        </div>
+        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+          Théorique :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          Paradigmes, concepts, lectures, etc.
+        </p>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'theorique') {
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
+        </div>
+
+        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+          Actualités et veille technologique :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          Nouveautés, événements, technologies, tendances, etc.
+        </p>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'actu') {
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
+        </div>
+      </section>
+
       {/* Extra blog */}
-      <section id="extra-section" className="extra h-screen">
+      <section
+        id="extra-section"
+        className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
+      >
         <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
           Espace détente, Cogitations et Pérégrinations :
         </h2>
@@ -135,16 +136,24 @@ const Accueil = ({ posts }): JSX.Element => {
       </section>
 
       {/* Section Favoris */}
-      <section id="favoris-section" className="favs">
-        <Coeur />
+      <section
+        id="favoris-section"
+        className="favs flex flex-col my-4 sm:ml-10 mx-2"
+      >
+        <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
+          Coup de coeur :
+        </h2>{' '}
+        <div>
+          <Coeur />
+        </div>
+        <hr className="my-2" />
       </section>
 
       {/* Section Archives */}
       <section id="archive-section" className="archives">
-        <hr className="my-2" />
         <FoldableArchive posts={posts} />
       </section>
-    </>
+    </div>
   );
 };
 

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Avatar from '../components/Nav/Avatar';
 import Bio from '../components/Bio';
 import Contact from '../components/Contact';
@@ -5,23 +6,42 @@ import IndexNav from '../components/Nav/IndexNav';
 import VoxelOwl from '../components/voxel-owl';
 
 const Navbar = () => {
+  // if show box clicked, show description and contact info
+  const [isFolded, setIsFolded] = useState(false);
+
+  const toggle = () => {
+    setIsFolded(!isFolded);
+  };
+
   return (
-    <nav className="with-scrollbar-light dark:with-scrollbar-dark flex lg:flex-col gap-4 h-screen w-1/4 sticky overflow-scroll top-0 p-4 border border-slate-600">
+    <nav className="md:with-scrollbar-light md:dark:with-scrollbar-dark flex flex-col md:gap-4 justify-around md:justify-start w-full md:sticky md:top-0 md:h-screen md:overflow-scroll p-4 md:border-0 border-b md:border-slate-600">
       <Avatar />
       <div className="hidden lg:flex">
         <VoxelOwl />
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="mt-20 md:mt-0 flex flex-col md:justify-center items-center">
         <h2
           data-testid="index-title"
-          className="subtitle font-serif font-bold shadow-sm mb-4"
+          className="subtitle font-serif font-bold shadow-sm mb-4 mt-2"
         >
           Bienvenue sur mon blog
         </h2>
         <IndexNav />
       </div>
+      <button
+        onClick={toggle}
+        className=" md:hidden bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 font-bold py-2 px-4 rounded inline-flex items-center"
+      >
+        {isFolded ? 'Masquer' : "Plus d'infos sur moi"}
+      </button>
+      {isFolded && (
+        <div className="" data-testid="accueil">
+          <Bio />
+          <Contact />
+        </div>
+      )}
       <div
-        className="flex lg:flex-col justify-center item-center"
+        className="hidden md:flex md:flex-col md:justify-center md:item-center"
         data-testid="accueil"
       >
         <Bio />

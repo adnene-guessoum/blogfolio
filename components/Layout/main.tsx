@@ -14,13 +14,23 @@ export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
 
 const MainLayout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
-    <div className="layout min-h-screen bg-gray-50 dark:bg-ivory-black">
+    <div className="flex md:flex-row flex-col justify-center">
       <CustomHead customMeta={customMeta} />
-      <Navbar />
-      <main className="flex justify-center main pt-10 sm:m-4">{children}</main>
-      <footer className="sticky top-[100vh] flex justify-center footer p-4 border border-slate-600">
-        copyleft 2023 - Adnene Guessoum
-      </footer>
+      <div className="hidden md:flex lg:w-1/4 md:w-1/3 w-full">
+        <Navbar />
+      </div>
+      <div className="bg-gray-50 dark:bg-ivory-black flex flex-col justify-center">
+        <div className="md:hidden dark:bg-black flex w-full">
+          <Navbar />
+          <hr />
+        </div>
+        <main className="flex md:flex-row flex-col justify-center main w-full">
+          {children}
+        </main>
+        <footer className="sticky top-[100vh] flex justify-center footer p-4 border border-slate-600">
+          copyleft 2023 - Adnene Guessoum
+        </footer>
+      </div>
     </div>
   );
 };

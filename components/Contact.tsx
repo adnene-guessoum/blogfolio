@@ -6,53 +6,73 @@ import MyLink from '../components/general/Link';
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-10">
-      <div className="text-justify text-center w-4/5">
-        <h2 className="subtitle sm:text-4xl text-2xl font-serif font-bold mb-2 shadow-sm pl-2 ">
-          Où me trouver ?
-        </h2>
+    <div className="text-justify text-center">
+      <h2 className="subtitle font-serif font-bold shadow-sm mb-4 flex font-serif font-bold shadow-sm">
+        Où me trouver ?
+      </h2>
 
-        <div className="contact-container m-6 p-4 md:p-10 flex flex-wrap gap-3 justify-between">
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
-            <BsTwitter size={20} />
-            <MyLink href="https://twitter.com/GuessoumAdnene">Twitter</MyLink>
-          </button>
+      <div className="contact-container flex flex-col justify-between items-center gap-4">
+        <div className="group flex gap-4 justify-center items-center">
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <BsTwitter size={20} />
+              <MyLink href="https://twitter.com/GuessoumAdnene">Twitter</MyLink>
+            </button>
+          </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
-            <BsGithub size={20} />
-            <MyLink href="https://github.com/adnene-guessoum">Github</MyLink>
-          </button>
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <BsGithub size={20} />
+              <MyLink href="https://github.com/adnene-guessoum">Github</MyLink>
+            </button>
+          </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
-            <BsLinkedin size={20} />
-            <MyLink href="https://www.linkedin.com/in/adnene-guessoum/">
-              Linkedin
-            </MyLink>
-          </button>
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <BsLinkedin size={20} />
+              <MyLink href="https://www.linkedin.com/in/adnene-guessoum/">
+                Linkedin
+              </MyLink>
+            </button>
+          </div>
+        </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
-            <SiLeetcode size={20} />
-            <MyLink href="https://leetcode.com/adnene/">Leetcode</MyLink>
-          </button>
+        <div className="flex justify-center items-center gap-4">
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <SiLeetcode size={20} />
+              <MyLink href="https://leetcode.com/adnene/">Leetcode</MyLink>
+            </button>
+          </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-fit sm:w-1/6">
-            <FaHackerrank size={20} />
-            <MyLink href="https://www.hackerrank.com/adnen_guessoum">
-              Hackerrank
-            </MyLink>
-          </button>
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <FaHackerrank size={20} />
+              <MyLink href="https://www.hackerrank.com/adnen_guessoum">
+                Hackerrank
+              </MyLink>
+            </button>
+          </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center w-1/3 sm:w-1/6">
-            <FaKaggle size={20} />
-            <MyLink href="https://www.kaggle.com/adneneguessoum">Kaggle</MyLink>
-          </button>
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <FaKaggle size={20} />
+              <MyLink href="https://www.kaggle.com/adneneguessoum">
+                Kaggle
+              </MyLink>
+            </button>
+          </div>
+        </div>
 
-          <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 gap-2 items-center">
-            <AiOutlineMail size={20} />
-            <MyLink href="mailto:adnen.guessoum@gmail.com">
-              adnen.guessoum@gmail.com
-            </MyLink>
-          </button>
+        <div className="flex justify-center items-center">
+          <div>
+            <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-slate-400 dark:hover:bg-slate-700 hover:bg-slate-300 rounded-md">
+              <AiOutlineMail size={20} />
+              <MyLink href="mailto:adnen.guessoum@gmail.com">
+                adnen.guessoum@gmail.com
+              </MyLink>
+            </button>
+          </div>
         </div>
       </div>
     </div>

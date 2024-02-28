@@ -21,7 +21,8 @@ module.exports = {
         thumbBlog: "url('/images/thumbnails/thumbnail_django.png')"
       },
       colors: {
-        'ivory-black': '#1D2731'
+        'ivory-black': '#1D2731',
+        'custom-beige': '#f9fafb'
       },
       flex: {
         slide: 10

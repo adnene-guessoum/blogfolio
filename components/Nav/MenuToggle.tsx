@@ -10,7 +10,7 @@ const MenuToggle = () => {
   };
 
   return (
-    <div className="flex sm:hidden flex-col items-center gap-4">
+    <div className="flex hidden flex-col items-center gap-4">
       <button
         className="flex items-center px-3 py-2 w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800 border border-gray-800 dark:border-gray-200 hover:border-gray-300 dark:hover:border-gray-700 focus:outline-none focus:ring"
         onClick={toggleMenu}

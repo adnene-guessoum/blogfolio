@@ -139,8 +139,8 @@ const Accueil = ({ posts }): JSX.Element => {
         id="favoris-section"
         className="favs flex flex-col my-4 sm:ml-10 mx-2"
       >
-        <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
-          Coup de coeur :
+        <h2 className="text-4xl border-b-4 p-5 font-bold underline text-center">
+          Coup de coeur:
         </h2>{' '}
         <div>
           <Coeur />

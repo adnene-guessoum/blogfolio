@@ -46,12 +46,12 @@ const PostPage = ({ mdxSource, frontMatter }) => {
   return (
     <Layout customMeta={customMeta}>
       <div className="ml-auto container">
-        <article className="mt-3 text-justify p-4 flex flex-col justify-center">
+        <article className="mt-3 text-justify sm:p-4 p-2 flex flex-col justify-center">
           <h1 className="text-3xl font-bold">{frontMatter.title}</h1>
           <p className="text-sm text-gray-500">{frontMatter.date}</p>
           <hr className="my-3" />
           <div className="flex flex-col text-justify justify-center items-center">
-            <div className="w-2/3">
+            <div className="sm:w-2/3 w-5/6">
               <MDXRemote {...mdxSource} components={components} />
             </div>
           </div>

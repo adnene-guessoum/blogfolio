@@ -10,11 +10,10 @@ const PostCard = ({ post, index }) => {
       <div className="image-container">
         <Image
           src={post.frontMatter.thumbnailUrl}
-          className="img-thumbnail rounded-start"
+          className="img-thumbnail rounded-start hidden sm:flex"
           width={200}
           height={200}
           alt={post.frontMatter.title}
-          objectFit="cover"
         />
       </div>
       <div className="card mb-4 pointer border-l-4 border-blue-500 border-solid pl-4 min-w-fit">

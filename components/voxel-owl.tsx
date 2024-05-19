@@ -119,7 +119,7 @@ const VoxelOwl = () => {
   return (
     <div
       ref={refContainer}
-      className="voxel-owl relative mx-auto mt-[20px] mb-[10px] w-[280px] h-[280px] border dark:bg-slate-900 bg-slate-400 border-slate-600"
+      className="voxel-owl relative mx-auto mt-[20px] mb-[10px] w-[280px] h-[280px] border dark:bg-slate-900 bg-gray-400 border-slate-600"
     >
       {loading && (
         <div

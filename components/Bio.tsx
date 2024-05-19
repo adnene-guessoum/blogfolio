@@ -10,9 +10,9 @@ const Bio = (): JSX.Element => {
         mes projets.{' '}
       </div>
       <div className="flex font-serif font-bold shadow-sm p-2 text-justify">
-        Quand &apos;en ai l&apos;occasion, j&apos;utilise mon temps libre à
-        étendre mes compétences et en discussions en tout genres. J&apos;espère
-        que vous trouverez quelque chose qui vous intéresse !
+        Quand j&apos;en ai l&apos;occasion, j&apos;utilise mon temps libre à
+        étendre mes compétences et en discussions en tous genres. J&apos;espère
+        que vous trouverez quelque chose qui vous intéresse ici !
       </div>
     </div>
   );

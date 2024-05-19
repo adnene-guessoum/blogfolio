@@ -1,7 +1,7 @@
 import { BsGithub, BsTwitter, BsLinkedin, BsBook } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { SiLeetcode } from 'react-icons/si';
-import { FaKaggle, FaHackerrank } from 'react-icons/fa';
+import { FaKaggle } from 'react-icons/fa';
 import MyLink from '../components/general/Link';
 
 const Contact = () => {

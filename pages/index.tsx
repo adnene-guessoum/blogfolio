@@ -49,7 +49,7 @@ const Accueil = ({ posts }): JSX.Element => {
         <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
           Tech & Dev:
         </h2>
-        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
           Pratique :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
@@ -63,7 +63,7 @@ const Accueil = ({ posts }): JSX.Element => {
             }
           })}
         </div>
-        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
           Théorique :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
@@ -77,7 +77,7 @@ const Accueil = ({ posts }): JSX.Element => {
           })}
         </div>
 
-        <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
           Actualités et veille technologique :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
@@ -97,41 +97,40 @@ const Accueil = ({ posts }): JSX.Element => {
         id="extra-section"
         className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
       >
-        <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
-          Espace détente, Cogitations et Pérégrinations :
+        <h2 className="text-4xl sm:text-5xl font-bold underline text-center">
+          Espace détente:
         </h2>
+        <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
+          Cogitations et Pérégrinations
+        </p>
 
-        <div className="flex flex-col my-10 ml-10">
-          <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-            Société et lectures :
-          </h3>
-          <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-            Qu&apos;est ce que vous en pensez ?
-          </p>
-          <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-            {posts.map((post, index) => {
-              if (post.frontMatter.category === 'extra') {
-                console.log(post);
-                return <PostCard post={post} index={index} key={index} />;
-              }
-            })}
-          </div>
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
+          Société et lectures :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          Qu&apos;est ce que vous en pensez ?
+        </p>
+        <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'extra') {
+              console.log(post);
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
         </div>
-        <div className="flex flex-col my-10 ml-10">
-          <h3 className="m-2 text-4xl font-serif font-bold mb-4 shadow-sm">
-            Divertissements :
-          </h3>
-          <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-            Parce qu&apos;il faut bien rigoler un peu.
-          </p>
-          <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-            {posts.map((post, index) => {
-              if (post.frontMatter.category === 'divertissement') {
-                console.log(post);
-                return <PostCard post={post} index={index} key={index} />;
-              }
-            })}
-          </div>
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
+          Divertissements :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          Parce qu&apos;il faut bien rigoler un peu.
+        </p>
+        <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'divertissement') {
+              console.log(post);
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
         </div>
       </section>
 

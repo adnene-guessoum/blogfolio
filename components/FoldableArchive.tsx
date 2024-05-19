@@ -27,17 +27,17 @@ const FoldableArchive = ({ posts }): JSX.Element => {
                 {posts.map((post, index) => (
                   <tr
                     key={index}
-                    className="bg-white border shadow-none dark:bg-gray-800 dark:border-gray-700 flex flex-col sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    className="bg-white border shadow-none dark:bg-gray-800 dark:border-gray-700 table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
                   >
                     <td
                       key={index}
-                      className="border border-black shadow-none dark:border-white p-2"
+                      className="border border-black shadow-none dark:border-white pl-2 sm:p-2"
                     >
                       {post.frontMatter.date}
                     </td>
                     <td
                       key={index}
-                      className="border border-black shadow-none dark:border-white p-2"
+                      className="border border-black shadow-none dark:border-white pl-2 sm:p-2"
                     >
                       <MyLink href={`/blog/${post.slug}`} key={index}>
                         {post.frontMatter.title}
@@ -46,7 +46,7 @@ const FoldableArchive = ({ posts }): JSX.Element => {
 
                     <td
                       key={index}
-                      className="border border-black shadow-none dark:border-white p-2"
+                      className="border border-black shadow-none dark:border-white pl-2 sm:p-2"
                     >
                       {post.frontMatter.description}
                     </td>

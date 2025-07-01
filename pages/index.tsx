@@ -3,7 +3,6 @@ import path from 'path';
 import matter from 'gray-matter';
 import PostCard from '../components/PostCard';
 import FoldableArchive from '../components/FoldableArchive';
-import Coeur from '../components/Coeur';
 import VoxelOwl from '../components/voxel-owl';
 
 export async function getStaticProps() {

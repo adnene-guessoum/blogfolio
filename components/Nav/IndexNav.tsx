@@ -17,11 +17,13 @@ const IndexNav = () => {
         </Link>
       </div>
 
+      {/* Deprecated
       <div className="">
         <Link href="/#favoris-section" passHref legacyBehavior>
           <a className="">Favoris</a>
         </Link>
       </div>
+			*/}
 
       <div className="">
         <Link href="/#archive-section" passHref legacyBehavior>

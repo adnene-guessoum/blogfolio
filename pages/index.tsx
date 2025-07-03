@@ -3,7 +3,6 @@ import path from 'path';
 import matter from 'gray-matter';
 import PostCard from '../components/PostCard';
 import FoldableArchive from '../components/FoldableArchive';
-import Coeur from '../components/Coeur';
 import VoxelOwl from '../components/voxel-owl';
 
 export async function getStaticProps() {
@@ -46,9 +45,12 @@ const Accueil = ({ posts }): JSX.Element => {
         id="tech-section"
         className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
       >
-        <h2 className="text-5xl border-b-4 p-5 font-bold underline text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold underline text-center">
           Tech & Dev:
         </h2>
+        <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
+          Compétences et réflexions
+        </p>
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
           Pratique :
         </h3>
@@ -134,7 +136,13 @@ const Accueil = ({ posts }): JSX.Element => {
         </div>
       </section>
 
-      {/* Section Favoris */}
+      {/* Section Archives */}
+      <section id="archive-section" className="archives">
+        <FoldableArchive posts={posts} />
+      </section>
+
+      {/* Section Favoris
+
       <section
         id="favoris-section"
         className="favs flex flex-col my-4 sm:ml-10 mx-2"
@@ -147,11 +155,7 @@ const Accueil = ({ posts }): JSX.Element => {
         </div>
         <hr className="my-2" />
       </section>
-
-      {/* Section Archives */}
-      <section id="archive-section" className="archives">
-        <FoldableArchive posts={posts} />
-      </section>
+			*/}
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="md:with-scrollbar-light md:dark:with-scrollbar-dark flex flex-col md:gap-4 justify-around md:justify-start w-full md:sticky md:top-0 md:h-screen md:overflow-scroll p-4 md:border-0 border-b md:border-slate-600">
+    <nav className="md:with-scrollbar-light md:dark:with-scrollbar-dark flex flex-col md:gap-4 justify-around md:justify-start w-full md:sticky md:top-0 md:h-screen md:overflow-auto overflow-y-scroll no-scrollbar p-4 md:border-0 border-b md:border-slate-600">
       <Avatar />
       <div className="hidden lg:flex">
         <VoxelOwl />

@@ -1,14 +1,13 @@
 import { BsGithub, BsTwitter, BsLinkedin, BsBook } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { SiLeetcode } from 'react-icons/si';
-import { FaKaggle } from 'react-icons/fa';
 import MyLink from '../components/general/Link';
 
 const Contact = () => {
   return (
     <div className="text-justify text-center">
       <h2 className="subtitle font-serif font-bold shadow-sm mb-4 flex font-serif font-bold shadow-sm">
-        Où me trouver ?
+        Where to find me ?
       </h2>
 
       <div className="contact-container flex flex-col justify-between items-center gap-4">
@@ -61,7 +60,7 @@ const Contact = () => {
                 Hackerrank
               </MyLink>
             </button>
-          </div>*/}
+          </div>
 
           <div>
             <button className="hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col border p-2 m-2 items-center dark:bg-slate-900 bg-gray-300 dark:hover:bg-slate-700 hover:bg-gray-400 rounded-md">
@@ -70,7 +69,7 @@ const Contact = () => {
                 Kaggle
               </MyLink>
             </button>
-          </div>
+          </div>*/}
         </div>
 
         <div className="flex justify-center items-center">

@@ -13,7 +13,7 @@ const IndexNav = () => {
 
       <div className="">
         <Link href="/#extra-section" passHref legacyBehavior>
-          <a className="">Autres</a>
+          <a className="">Other</a>
         </Link>
       </div>
 

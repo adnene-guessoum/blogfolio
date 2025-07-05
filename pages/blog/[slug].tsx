@@ -9,11 +9,10 @@ import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
-import { MyLink } from '../../components';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const components = {
-  MyLink,
   SyntaxHighlighter: props => (
     <div className="flex justify-center max-w-2/3">
       <SyntaxHighlighter style={dracula} {...props} />
@@ -57,9 +56,14 @@ const PostPage = ({ mdxSource, frontMatter }) => {
           </div>
         </article>
         <div className="ml-4 underline text-xl">
-          <MyLink href="/#tech-section" className="m-4 underline text-xl">
-            Retour aux articles
-          </MyLink>
+          <Link
+            className="m-4 underline text-xl"
+            href="/#tech-section"
+            passHref
+            legacyBehavior
+          >
+            <a className="nav-link">Retour aux articles</a>
+          </Link>
         </div>
       </div>
     </Layout>

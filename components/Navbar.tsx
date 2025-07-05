@@ -24,7 +24,7 @@ const Navbar = () => {
           data-testid="index-title"
           className="subtitle font-serif font-bold shadow-sm mb-4 mt-2"
         >
-          Bienvenue sur mon blog
+          Welcome to my blog :
         </h2>
         <IndexNav />
       </div>

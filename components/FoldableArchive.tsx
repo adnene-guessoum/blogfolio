@@ -16,12 +16,12 @@ const FoldableArchive = ({ posts }): JSX.Element => {
           onClick={toggle}
           className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 font-bold py-2 px-4 rounded inline-flex items-center"
         >
-          {isFolded ? 'Cacher' : 'Afficher'}
+          {isFolded ? 'Hide' : 'Show'}
         </button>
       </div>
       <div className="flex flex-col justify-center items-center">
         {isFolded && (
-          <div className="shadow-md sm:rounded-lg ld:w-1/2 mt-2">
+          <div className="shadow-md sm:rounded-lg mt-2">
             <table className="text-sm text-left text-gray-700 dark:text-gray-300">
               <tbody>
                 {posts.map((post, index) => (

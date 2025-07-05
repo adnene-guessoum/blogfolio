@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MyLink from './general/Link';
+import Link from 'next/link';
 
 const PostCard = ({ post, index }) => {
   return (
@@ -17,9 +17,11 @@ const PostCard = ({ post, index }) => {
         />
       </div>
       <div className="card mb-4 pointer border-l-4 border-blue-500 border-solid pl-4 min-w-fit">
-        <MyLink href={`/blog/${post.slug}`} key={index}>
-          <h5 className="card-title text-xl">{post.frontMatter.title}</h5>
-        </MyLink>
+        <Link href={`/blog/${post.slug}`} key={index} passHref legacyBehavior>
+          <a className="nav-link">
+            <h5 className="card-title text-xl">{post.frontMatter.title}</h5>
+          </a>
+        </Link>
         <p className="card-description pl-2 mt-2">
           {post.frontMatter.description}
         </p>

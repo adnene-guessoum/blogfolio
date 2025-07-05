@@ -1,18 +1,18 @@
 const Bio = (): JSX.Element => {
   return (
     <div data-testid="bio-section" className="flex flex-col">
-      <h3 className="flex font-serif font-bold shadow-sm">Présentation</h3>
+      <h3 className="flex font-serif font-bold shadow-sm">Introduction :</h3>
       <div className="flex font-serif font-bold shadow-sm p-2 text-justify">
-        Développeur Python chez Data Impact by NielsenIQ et habitant Orly, dans
-        le Val-de-Marne (94). Je travaille principalement avec JS/TS et Python
-        (React, Next, Flask, Scrapy etc.). Ce site me sert d&apos;espace
-        personnel pour discuter de tout et de rien et montrer quelques uns de
-        mes projets.{' '}
+        Software developer at NielsenIQ. Based in France (Orly, Val-de-Marne,
+        94). I am mostly working with Python professionnaly, and enjoying JS/TS
+        on the side (React, Next, Django, Scrapy etc.). This blog allows me to
+        explore anything I could be curious about in tech and keep digging for
+        technical depth. These days it has to do with cybersecurity, Machine
+        Learning or lower level concepts. And of cours, the blog is also a handy
+        portfolio for any opportunities that may come in the future.{' '}
       </div>
       <div className="flex font-serif font-bold shadow-sm p-2 text-justify">
-        Quand j&apos;en ai l&apos;occasion, j&apos;utilise mon temps libre à
-        étendre mes compétences et en discussions en tous genres. J&apos;espère
-        que vous trouverez quelque chose qui vous intéresse ici !
+        Feel free to contact me !
       </div>
     </div>
   );

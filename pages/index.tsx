@@ -49,27 +49,14 @@ const Accueil = ({ posts }): JSX.Element => {
           Tech & Dev:
         </h2>
         <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
-          Compétences et réflexions
+          Explorations and thoughts:
         </p>
+
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Pratique :
+          Theory :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          bouts de code, trucs et astuces, entraînements, etc.
-        </p>
-        <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-          {posts.map((post, index) => {
-            if (post.frontMatter.category === 'pratique') {
-              console.log(post);
-              return <PostCard post={post} index={index} key={index} />;
-            }
-          })}
-        </div>
-        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Théorique :
-        </h3>
-        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          Paradigmes, concepts, lectures, etc.
+          Lectures, Books, Concepts, etc.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -80,10 +67,25 @@ const Accueil = ({ posts }): JSX.Element => {
         </div>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Actualités et veille technologique :
+          Practice :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          Nouveautés, événements, technologies, tendances, etc.
+          code snippets, tips and tricks, training, etc.
+        </p>
+        <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
+          {posts.map((post, index) => {
+            if (post.frontMatter.category === 'pratique') {
+              console.log(post);
+              return <PostCard post={post} index={index} key={index} />;
+            }
+          })}
+        </div>
+
+        <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
+          News and miscelenous tech topics :
+        </h3>
+        <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
+          News, events, trends, etc.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -95,22 +97,19 @@ const Accueil = ({ posts }): JSX.Element => {
       </section>
 
       {/* Extra blog */}
-      <section
-        id="extra-section"
-        className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
-      >
+      <section id="extra-section" className="flex flex-col my-4 sm:ml-10 mx-2">
         <h2 className="text-4xl sm:text-5xl font-bold underline text-center">
-          Espace détente:
+          Break room :
         </h2>
         <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
-          Cogitations et Pérégrinations
+          Cogitations & Peregrinations
         </p>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Société et lectures :
+          Society and Readings :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          Qu&apos;est ce que vous en pensez ?
+          What do you think ?
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -121,10 +120,10 @@ const Accueil = ({ posts }): JSX.Element => {
           })}
         </div>
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Divertissements :
+          Entertainment :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          Parce qu&apos;il faut bien rigoler un peu.
+          Cause Having fun is part of life too.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -134,11 +133,6 @@ const Accueil = ({ posts }): JSX.Element => {
             }
           })}
         </div>
-      </section>
-
-      {/* Section Archives */}
-      <section id="archive-section" className="archives">
-        <FoldableArchive posts={posts} />
       </section>
 
       {/* Section Favoris
@@ -156,6 +150,11 @@ const Accueil = ({ posts }): JSX.Element => {
         <hr className="my-2" />
       </section>
 			*/}
+
+      {/* Section Archives */}
+      <section id="archive-section" className="archives">
+        <FoldableArchive posts={posts} />
+      </section>
     </div>
   );
 };

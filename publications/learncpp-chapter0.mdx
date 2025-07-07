@@ -1,0 +1,170 @@
+---
+title: Learning c++ day one
+date: 'July 7th 2025'
+description: First steps into the C++ world, with learncpp.com
+thumbnailUrl: '/images/articles/cpp_dayone/cpp-logo.png'
+category: programming
+tags: ['cpp', 'coding', 'lower_levels']
+---
+
+# Learn cpp the right way: a journey
+
+<br />
+<Image
+  src={`/images/articles/cpp_dayone/cpp-logo.png`}
+/>
+<br />
+
+<div>
+  I decided to start from scratch, even though I have some professional experience coding,
+	mostly in Python and JS/TS. The point was to leave no stone unturned, and have a complete view of c++ as a language. I'll see if that was useful.
+	Potentially, i'll move on more quickly on concepts I am already too familiar with.
+	<br />
+	As for the resource, it felt like the website <a
+  	href="https://www.learncpp.com/"
+  	target="_blank"
+  	className="underline underline-offset-2">Learncpp.com</a> had a whole, complete track going into good details of the language. heard good things about it, so that's what I am going with.
+	<br />
+	The best rule, I find, is to pick a resource and stick with it. Even suboptimal, it's better than running around like a headless chicken.
+	<br />
+	So let's go. and let's have some fun.
+</div>
+
+
+<br />
+## Chapter O: A gentle introduction
+<br />
+
+<div>
+Nothing very complicated at the beginning. Some basic terminology and some presentation.
+We find a series of good reminders and definitions that are never bad to re-examine, even for seasonned professionals.
+<br />
+For instance, the illustrated lifecycle of the programming process might remind someone how often we lose track of good practices in our jobs, and therefore lose time when we wanted to find some shortcuts.
+<br />
+<a
+  	href="https://www.learncpp.com/"
+  	target="_blank"
+  	className="underline underline-offset-2">0.4 — Introduction to C++ development</a>
+
+</div>
+
+<br />
+<Image
+  src={`/images/articles/cpp_dayone/Development_cycle_illustration.png`}
+/>
+<br />
+
+### Our very first lines of cpp code
+<br />
+
+<div>
+Now come our first glimpse at cpp source code. A bit different in structure compared to python of course, but nothing too mind bending for now. most of it we can guess what it means (declare int type, main function, standard output, imports, return value...). Even though we should be careful not to impose our perceived meaning from an other language to this new one.
+<br />
+Let's hold our horses.
+</div>
+
+<br />
+<SyntaxHighlighter language="cpp">
+{`#include <iostream>
+
+int main() {
+	std::cout << "Here is some text !";
+		return 0;
+	}
+})
+`}
+</SyntaxHighlighter>
+<br />
+
+### The tools used to code in c++
+<br />
+
+<div>
+The tutorial in this chapter then goes into details about the different tools and programms used to manage each step of the process of programming. Editors, compilers, linkers and testing tools/IDEs are mentionned. I'll pass quickly on these as I am mostly familiar with each of these topics from a high level perspective. I myself mostly use vim, and will be diving into c++ programming through the lense of this tool i am familiar with. I'll see then what it implies for each build step as i am going.
+<br />
+An intersting part mentionned here that is mostly absent from python programming of course is the manual compilation / linking steps. An object file is created from the source code, the linker is in charge of checking these files and linking them (standard libraries, third-party libraries, "modules", etc.). This is a topic worth diving deeper into in the future in order to understand what is actually accomplished here step by step.
+</div>
+
+<br />
+### The infamous "Hello world !"
+<br />
+
+<div>Let's now compile something. and what a thing, as it is our hello world program</div>
+
+<br />
+<SyntaxHighlighter language="cpp">
+{`#include <iostream>
+
+int main() {
+	std::cout << "Hello world !\n";
+	return 0;
+	}
+})
+`}
+</SyntaxHighlighter>
+<br />
+
+<div>We use the following compiler command (I am trying to keep to the latest 2023 standard, and using a bash script not to retype infinitely at each code change) :</div>
+<SyntaxHighlighter language="bash">
+{`#!/bin/bash
+
+g++ -std=c++23 hello_world.cpp -o hello_world
+`}
+</SyntaxHighlighter>
+<br />
+
+and all is good and works fine. how neat.
+
+
+<br />
+### Some configurations considerations for our compiler
+<br />
+
+<div>
+Finally, the chapter ends on a few discussions regarding compilers and their configuration.
+<br />
+Particularly, there is a discussion regarding build configurations in IDEs (projects, workspaces, debug configs vs release configs, etc.). Foc gcc (and therefore g++ i guess) compilers from the command line, the default is the debug build (-O0), and adding "-O2" or "-O3" will turn on optimizations for release builds.
+<br />
+to have more info, we have a link to optimization options here: <a
+  	href="https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html"
+  	target="_blank"
+  	className="underline underline-offset-2">GCC Optimizations Options</a>
+</div>
+<br />
+
+<div>
+Apparently, compilers find that it's funny to make life more difficult for new learners, allowing behaviors that are not compliant with c++ modern standards for historical compatibility purposes. therefore we are advised to use the "-pedantic-errors" flag to disable compilers extensions allowing for those. so I will do this in the future.
+</div>
+<br />
+
+<div>
+Some advice are given regarding compiling errors and warnings, that are not too dissimilar in best practice to any other programming language. don't let warnings pile up, and error will abort compilation, while learning turn warning levels up with "-Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion" flags, etc.
+<br />
+It is possible to force compiler to treat all warnings as errors. They say it's good practice while learning, but I feel it's going to be a very serious headache. I will see in the future if I want this but for now, I'll pass. For reference, use this flag "-Werror".
+</div>
+<br />
+
+<div>
+Regarding language standards, i went with the latest c++23 (as seen in command for compilation), which is recommended in tutorial. so yeah, made the right choice, I guess. Apparently, official standards documents are only available for purchase, which was a bit surprising to me, but I guess there is an economic reason for it. It's not used for learning though, so not my problem, until I work on an official compiler i guess.
+the drafts for the future standard are available on github : <a
+  	href="https://github.com/cplusplus/draft"
+  	target="_blank"
+  	className="underline underline-offset-2">C++26 draft</a>.
+<br />
+Compilers may have incomplete support for new standard features, causing issues when compiling. so if I am driven crazy by incomprehensible bugs, well that may be it.
+
+To check which standard of the language your compiler is running, learncpp.com provides a script you can use here :
+<a
+  	href="https://www.learncpp.com/cpp-tutorial/what-language-standard-is-my-compiler-using/"
+  	target="_blank"
+  	className="underline underline-offset-2">Check compiler standard</a>
+</div>
+
+
+<br />
+### And that's basically it for Chapter 0.
+<br />
+<div>
+What an introduction. See you soon for the big dive into the actual C++ concepts.
+Bye.
+</div>

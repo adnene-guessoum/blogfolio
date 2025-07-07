@@ -49,7 +49,7 @@ const Accueil = ({ posts }): JSX.Element => {
           Tech & Dev:
         </h2>
         <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
-          Explorations and thoughts:
+          Explorations & thoughts:
         </p>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">

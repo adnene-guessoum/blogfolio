@@ -53,28 +53,28 @@ const Accueil = ({ posts }): JSX.Element => {
         </p>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Theory :
+          Programming:
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          Lectures, Books, Concepts, etc.
+          code snippets, tips and tricks, lectures, books, concepts, etc.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
           {posts.map((post, index) => {
-            if (post.frontMatter.category === 'theorique') {
+            if (post.frontMatter.category === 'programming') {
               return <PostCard post={post} index={index} key={index} />;
             }
           })}
         </div>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Practice :
+          Cybersecurity :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          code snippets, tips and tricks, training, etc.
+          Anything related to security concepts and tools.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
           {posts.map((post, index) => {
-            if (post.frontMatter.category === 'pratique') {
+            if (post.frontMatter.category === 'cybersecurity') {
               console.log(post);
               return <PostCard post={post} index={index} key={index} />;
             }
@@ -82,14 +82,14 @@ const Accueil = ({ posts }): JSX.Element => {
         </div>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          News and miscelenous tech topics :
+          AI & Machine Learning :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          News, events, trends, etc.
+          Understanding the current technological revolution.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
           {posts.map((post, index) => {
-            if (post.frontMatter.category === 'actu') {
+            if (post.frontMatter.category === 'AI') {
               return <PostCard post={post} index={index} key={index} />;
             }
           })}
@@ -99,17 +99,17 @@ const Accueil = ({ posts }): JSX.Element => {
       {/* Extra blog */}
       <section id="extra-section" className="flex flex-col my-4 sm:ml-10 mx-2">
         <h2 className="text-4xl sm:text-5xl font-bold underline text-center">
-          Break room :
+          Break Room :
         </h2>
         <p className="m-2 text-xl font-serif font-bold border-b-4 mb-4 shadow-sm text-center">
           Cogitations & Peregrinations
         </p>
 
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
-          Society and Readings :
+          Society, readings and entertainment :
         </h3>
         <p className="m-2 text-xl font-serif font-bold mb-4 shadow-sm">
-          What do you think ?
+          Cause having fun is part of life too.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
           {posts.map((post, index) => {
@@ -119,6 +119,7 @@ const Accueil = ({ posts }): JSX.Element => {
             }
           })}
         </div>
+        {/*
         <h3 className="m-2 text-2xl font-serif font-bold mb-4 shadow-sm">
           Entertainment :
         </h3>
@@ -132,7 +133,7 @@ const Accueil = ({ posts }): JSX.Element => {
               return <PostCard post={post} index={index} key={index} />;
             }
           })}
-        </div>
+        </div> */}
       </section>
 
       {/* Section Favoris

@@ -8,8 +8,8 @@ const Bio = (): JSX.Element => {
         on the side (React, Next, Django, Scrapy etc.). This blog allows me to
         explore anything I could be curious about in tech and keep digging for
         technical depth. These days it has to do with cybersecurity, Machine
-        Learning or lower level concepts. And of cours, the blog is also a handy
-        portfolio for any opportunities that may come in the future.{' '}
+        Learning or lower level concepts. And of course, the blog is also a
+        handy portfolio for any opportunities that may come in the future.{' '}
       </div>
       <div className="flex font-serif font-bold shadow-sm p-2 text-justify">
         Feel free to contact me !

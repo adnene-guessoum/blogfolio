@@ -59,7 +59,7 @@ const Accueil = ({ posts }): JSX.Element => {
           code snippets, tips and tricks, lectures, books, concepts, etc.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
-          {posts.map((post, index) => {
+          {[...posts].reverse().map((post, index) => {
             if (post.frontMatter.category === 'programming') {
               return <PostCard post={post} index={index} key={index} />;
             }
@@ -73,7 +73,7 @@ const Accueil = ({ posts }): JSX.Element => {
           Anything related to security concepts and tools.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-          {posts.map((post, index) => {
+          {[...posts].reverse().map((post, index) => {
             if (post.frontMatter.category === 'cybersecurity') {
               console.log(post);
               return <PostCard post={post} index={index} key={index} />;
@@ -88,7 +88,7 @@ const Accueil = ({ posts }): JSX.Element => {
           Understanding the current technological revolution.
         </p>
         <div className="flex flex-col lg:flex-row lg:flex-wrap justify-start gap-2 m-5">
-          {posts.map((post, index) => {
+          {[...posts].reverse().map((post, index) => {
             if (post.frontMatter.category === 'AI') {
               return <PostCard post={post} index={index} key={index} />;
             }
@@ -112,7 +112,7 @@ const Accueil = ({ posts }): JSX.Element => {
           Cause having fun is part of life too.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-          {posts.map((post, index) => {
+          {[...posts].reverse().map((post, index) => {
             if (post.frontMatter.category === 'extra') {
               console.log(post);
               return <PostCard post={post} index={index} key={index} />;
@@ -127,7 +127,7 @@ const Accueil = ({ posts }): JSX.Element => {
           Cause Having fun is part of life too.
         </p>
         <div className="flex flex-col lg:flex-row justify-start gap-2 m-5">
-          {posts.map((post, index) => {
+          {[...posts].reverse().map((post, index) => {
             if (post.frontMatter.category === 'divertissement') {
               console.log(post);
               return <PostCard post={post} index={index} key={index} />;
@@ -154,7 +154,7 @@ const Accueil = ({ posts }): JSX.Element => {
 
       {/* Section Archives */}
       <section id="archive-section" className="archives">
-        <FoldableArchive posts={posts} />
+        <FoldableArchive posts={[...posts].reverse()} />
       </section>
     </div>
   );

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { useRouter } from 'next/router';
 
-export const WEBSITE_HOST_URL = 'https://adnene-dev.vercel.app/';
+export const WEBSITE_HOST_URL = 'https://guessoum.dev/';
 
 const CustomHead = ({ customMeta }) => {
   const router = useRouter();
@@ -10,8 +10,8 @@ const CustomHead = ({ customMeta }) => {
   const meta = {
     title: 'Blog - Guessoum.dev',
     description:
-      "Blog d'Adnene Guessoum, développeur fullstack, basé à Orly (94).",
-    image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
+      "Adnene Guessoum's blogfolio, software developer, France, Orly (94).",
+    image: `${WEBSITE_HOST_URL}images/site-preview.png`,
     type: 'website',
     ...customMeta
   };

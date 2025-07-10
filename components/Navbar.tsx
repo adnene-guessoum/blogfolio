@@ -6,7 +6,8 @@ import IndexNav from '../components/Nav/IndexNav';
 import VoxelOwl from '../components/voxel-owl';
 
 const Navbar = () => {
-  // if show box clicked, show description and contact info
+  // if show box clicked, show description and contact info. done to gain space
+  // when Navbar on top on small screens.
   const [isFolded, setIsFolded] = useState(false);
 
   const toggle = () => {

@@ -33,7 +33,7 @@ const Navbar = () => {
         onClick={toggle}
         className=" md:hidden bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 font-bold py-2 px-4 rounded inline-flex items-center"
       >
-        {isFolded ? 'Masquer' : "Plus d'infos sur moi"}
+        {isFolded ? 'Hide' : 'About me'}
       </button>
       {isFolded && (
         <div className="" data-testid="accueil">

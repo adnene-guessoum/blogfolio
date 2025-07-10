@@ -10,7 +10,7 @@ type LayoutProps = {
   };
 };
 
-export const WEBSITE_HOST_URL = 'https://guessoum.dev/';
+export const WEBSITE_HOST_URL = 'https://guessoum.dev';
 
 const MainLayout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (

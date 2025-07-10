@@ -35,16 +35,13 @@ export async function getStaticProps() {
 
 const Accueil = ({ posts }): JSX.Element => {
   return (
-    <div className="md:h-full w-full">
+    <div className="w-full">
       {/* Accueil - tech blog */}
       <div className="lg:hidden flex">
         <VoxelOwl />
       </div>
 
-      <section
-        id="tech-section"
-        className="flex flex-col my-4 sm:ml-10 mx-2 h-screen"
-      >
+      <section id="tech-section" className="flex flex-col my-4 sm:ml-10 mx-2">
         <h2 className="text-4xl sm:text-5xl font-bold underline text-center">
           Tech & Dev:
         </h2>
